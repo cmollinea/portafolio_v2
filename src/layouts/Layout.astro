@@ -1,0 +1,103 @@
+---
+import Heart from '../components/icons/Heart';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang='en' class='scroll-smooth'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='description' content='Astro description' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+    <script>
+      function getReady() {
+        let body = document.getElementsByTagName('body');
+        body[0].classList.remove('hidden');
+        let loading_screen = document.getElementById('loading_screen');
+        loading_screen?.classList.add('hidden');
+      }
+
+      window.onload = () => getReady();
+    </script>
+  </head>
+  <div
+    id='loading_screen'
+    class='fixed inset-0 z-[60] bg-black flex place-content-center items-center'
+  >
+    <p>Loading</p>
+  </div>
+  <body class='hidden'>
+    <nav
+      class='h-16 flex items-center backdrop-blur-md sticky top-0 z-50 border-b rounded-b-xl border-neutral-300/20 px-4 bg-[#121212]/80 justify-between'
+    >
+      <div class='flex items-center'>
+        <img
+          src='/hero.JPG'
+          class='h-12 w-12 rounded-full object-cover object-top border-2 border-neutral-200/50'
+        />
+        <div class='flex flex-col px-2 text-red font-medium'>
+          <span class='text-sm'>Carlos Yoan</span>
+          <span class='text-xs opacity-80'>@procastinatorDev</span>
+        </div>
+      </div>
+      <div class='text-xs flex gap-4 max-md:px-1 px-6 font-semibold'>
+        <a href='#social' class='hover:underline
+         hover:text-red-500'
+          >Contact</a
+        >
+        <a href='#about_me' class='hover:underline
+         hover:text-red-500'
+          >About Me</a
+        >
+      </div>
+    </nav>
+    <slot />
+    <footer
+      class='border-t border-neutral-300/20 h-10 rounded-t-xl w-full grid place-content-center py-10 text-neutral-200'
+    >
+      <p class='px-4 font-bold text-xs'>
+        Copyright © 2023 - All rights reserved
+      </p>
+      <p class='text-[10px] flex items-center place-content-center'>
+        Made with <span class='text-current'><Heart /></span>by {' '}
+        <a
+          href='https://www.github.com/cmollinea'
+          target='_blank'
+          rel='noopener noreferrer'
+          class='px-0.5 hover:underline'>@procastinatordev</a
+        >
+      </p>
+    </footer>
+  </body>
+
+  <style is:global>
+    html {
+      font-family: system-ui, sans-serif;
+      background: #121212;
+      background-size: 224px;
+      color: rgb(204, 210, 213);
+    }
+
+    code {
+      font-family:
+        Menlo,
+        Monaco,
+        Lucida Console,
+        Liberation Mono,
+        DejaVu Sans Mono,
+        Bitstream Vera Sans Mono,
+        Courier New,
+        monospace;
+    }
+  </style>
+
+
+</html>
