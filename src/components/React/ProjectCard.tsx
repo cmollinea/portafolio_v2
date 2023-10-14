@@ -17,7 +17,7 @@ function ProjectCard({ image, title, link, index, children }: Props) {
     <motion.div
       {...config}
       transition={{ delay: index * 0.05 }}
-      className='shadow-lg shadow-neutral-200/5 backdrop-blur-sm rounded-lg border border-neutral-200/10 hover:border-neutral-200/30 transition-colors max-w-[350px] md:max-w-xl group relative overflow-hidden'
+      className='shadow-lg shadow-neutral-200/5 backdrop-blur-sm rounded-lg border border-neutral-200/10 hover:border-red-500 transition-colors max-w-[350px] md:max-w-xl group relative overflow-hidden'
     >
       <div className='relative overflow-hidden'>
         <img
