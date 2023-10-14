@@ -21,7 +21,7 @@ function ContactLink({ href, children }: Props) {
       <span className='z-30 relative flex gap-2 text-neutral-500 group-hover:text-red-500 transition-colors ease-in-out items-center'>
         {children}
       </span>{' '}
-      <span className='absolute inset-0 bg-gradient-to-tr opacity-0 group-hover:opacity-100 from-gray-200/20 to-transparent z-20 transition-opacity duration-200 ease-in-out backdrop-blur-[1px]'></span>
+      <div className='absolute inset-0 bg-gradient-to-tr opacity-0 group-hover:opacity-100 from-gray-200/20 to-transparent z-20 transition-opacity duration-200 ease-in-out backdrop-blur-[1px]'></div>
     </motion.a>
   );
 }

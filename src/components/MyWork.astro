@@ -2,6 +2,7 @@
 import ProjectCard from './React/ProjectCard';
 import SectionTitle from './SectionTitle.astro';
 import StyledSection from './StyledSection.astro';
+import { stack } from './React/MotionStack';
 ---
 
 <StyledSection>
@@ -16,6 +17,7 @@ import StyledSection from './StyledSection.astro';
         github: 'https://github.com/cmollinea/AnimeCu'
       }}
       image='/animecu.png'
+      stackIndex={[6, 5, 3]}
     >
       AnimeCu is created as a result of my journey learning NextJS and
       TypeScript. Using the API provided by JikanMoe, I create a modern
@@ -32,6 +34,7 @@ import StyledSection from './StyledSection.astro';
         github: 'https://github.com/cmollinea/samu-llanes-portafolio'
       }}
       image='samu.png'
+      stackIndex={[7, 4, 5, 3]}
     >
       I created this customized website as a freelancer job for a skilled
       photographer based in Havana, Cuba. I used Astro as the main technology
@@ -48,6 +51,7 @@ import StyledSection from './StyledSection.astro';
         github: 'https://github.com/cmollinea/bazar-online'
       }}
       image='bazar.png'
+      stackIndex={[6, 5, 3]}
     >
       This project was created with NextJS as a result of a technical test
       launched by Mercado Libre. I used NextUI as a component library due to its
@@ -64,6 +68,7 @@ import StyledSection from './StyledSection.astro';
         github: 'https://github.com/cmollinea/cuban-electric-bill'
       }}
       image='bill.png'
+      stackIndex={[4, 5, 2]}
     >
       It is among my early projects on my self-taught journey. It uses React
       with Tailwind CSS and was born out of the idea that although there are

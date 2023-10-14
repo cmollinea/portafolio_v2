@@ -10,7 +10,7 @@ import React from '../icons/React';
 import TailwndCss from '../icons/TailwndCss';
 import TypeScript from '../icons/TypeScript';
 
-const stack = [
+export const stack = [
   <HTML />,
   <Css />,
   <JavaScript />,
@@ -26,14 +26,14 @@ function MotionStack() {
   return (
     <>
       {stack.map((tech, index) => (
-        <motion.span
+        <motion.div
           key={index}
           {...config}
           transition={{ delay: 0.55 + index * 0.05 }}
           className='text-xs md:text-xl bg-neutral-300/10 backdrop-blur-sm border border-neutral-300/20 rounded-md p-1 md:p-2 flex items-center place-content-center'
         >
           {tech}
-        </motion.span>
+        </motion.div>
       ))}
     </>
   );

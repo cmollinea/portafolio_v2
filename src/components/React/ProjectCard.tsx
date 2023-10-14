@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion';
 import { config } from '../../constants/motionProject';
+import Code from '../icons/Code';
+import External from '../icons/External';
+import { stack } from './MotionStack';
 
 type Props = {
   title: string;
@@ -10,9 +13,17 @@ type Props = {
   image: string;
   index: number;
   children: React.ReactNode;
+  stackIndex: number[];
 };
 
-function ProjectCard({ image, title, link, index, children }: Props) {
+function ProjectCard({
+  image,
+  title,
+  link,
+  index,
+  children,
+  stackIndex
+}: Props) {
   return (
     <motion.div
       {...config}
@@ -28,24 +39,31 @@ function ProjectCard({ image, title, link, index, children }: Props) {
         />
       </div>
       <div className='p-6 relative text-lg'>
-        <h3 className='text-2xl font-bold bg-gradient-to-tr from-red-500 via-red-500 to-orange-500 bg-clip-text text-transparent'>
-          {title}
-        </h3>
-        <p className='text-sm md:text-base pt-2'>{children}</p>
-        <div className='grid grid-cols-2 w-fit'>
-          <a
-            href={link.live}
-            className='text-lg font-bold text-red-500 hover:underline'
-          >
-            Live
-          </a>
-          <a
-            href={link.github}
-            className='text-lg font-bold text-red-500 hover:underline'
-          >
-            Repo
-          </a>
+        <a
+          href={link.live}
+          target='_blank'
+          className='text-2xl md:text-4xl font-bold text-red-500 flex items-center py-0.5 hover:underline'
+        >
+          {title} <External />
+        </a>
+        <div className='flex items-center my-2 gap-1'>
+          {stackIndex.map((item) => (
+            <div
+              className='text-xs md:text-xl bg-neutral-300/10 backdrop-blur-sm border border-neutral-300/20 rounded-md p-1 md:p-2 flex items-center place-content-center'
+              key={index}
+            >
+              {stack[item]}
+            </div>
+          ))}
         </div>
+        <p className='text-sm md:text-base pt-2'>{children}</p>
+        <a
+          href={link.github}
+          className='text-lg font-bold text-red-500 hover:underline flex items-center mt-2'
+        >
+          <Code />
+          Code
+        </a>
       </div>
     </motion.div>
   );
