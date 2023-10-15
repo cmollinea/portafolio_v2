@@ -1,5 +1,8 @@
 ---
 import Heart from '../components/icons/Heart';
+import Meta from '../components/Meta.astro';
+import OpenGraphFacebook from '../components/OpenGraphFacebook.astro';
+import TwitterCard from '../components/TwitterCard.astro';
 
 interface Props {
   title: string;
@@ -11,11 +14,10 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang='en' class='scroll-smooth'>
   <head>
-    <meta charset='UTF-8' />
-    <meta name='description' content='Astro description' />
-    <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='generator' content={Astro.generator} />
+    <Meta />
+    <OpenGraphFacebook />
+    <TwitterCard />
+
     <title>{title}</title>
     <script>
       function getReady() {
@@ -105,6 +107,4 @@ const { title } = Astro.props;
         monospace;
     }
   </style>
-
-
 </html>
