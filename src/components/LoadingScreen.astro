@@ -1,61 +1,70 @@
 <div
   id='loading_screen'
-  class='fixed top-0 bottom-0 left-0 right-0 z-[60] bg-black flex place-content-center items-center'
+  class='fixed top-0 bottom-0 left-0 right-0 z-[60] bg-black flex flex-col place-content-center items-center space-y-5'
 >
-  <span class='loader'></span>
+  <img src='/og.png' class='animate-pulse' />
+  <!-- <span class='loader'></span> -->
 </div>
-<style>
+<!-- <style>
   .loader {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
+    width: 0;
+    max-width: 200px;
+    height: 4.8px;
     display: inline-block;
     position: relative;
-    border: 3px solid;
-    border-color: #fff #fff transparent transparent;
+    background: rgb(239, 68, 68);
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
     box-sizing: border-box;
-    animation: rotation 1s linear infinite;
+    animation: animFw 10s linear infinite;
   }
   .loader::after,
   .loader::before {
     content: '';
-    box-sizing: border-box;
+    width: 10px;
+    height: 1px;
+    background: rgb(239, 68, 68);
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    border: 3px solid;
-    border-color: transparent transparent #ef4444 #ef4444;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    top: 9px;
+    right: -2px;
+    opacity: 0;
+    transform: rotate(-45deg) translateX(0px);
     box-sizing: border-box;
-    animation: rotationBack 0.5s linear infinite;
-    transform-origin: center center;
+    animation: coli1 0.3s linear infinite;
   }
   .loader::before {
-    width: 32px;
-    height: 32px;
-    border-color: #fff #fff transparent transparent;
-    animation: rotation 1.5s linear infinite;
+    top: -4px;
+    transform: rotate(45deg);
+    animation: coli2 0.3s linear infinite;
   }
 
-  @keyframes rotation {
+  @keyframes animFw {
     0% {
-      transform: rotate(0deg);
+      width: 0;
     }
     100% {
-      transform: rotate(360deg);
+      width: 100%;
     }
   }
-  @keyframes rotationBack {
+
+  @keyframes coli1 {
     0% {
-      transform: rotate(0deg);
+      transform: rotate(-45deg) translateX(0px);
+      opacity: 0.7;
     }
     100% {
-      transform: rotate(-360deg);
+      transform: rotate(-45deg) translateX(-45px);
+      opacity: 0;
     }
   }
-</style>
+
+  @keyframes coli2 {
+    0% {
+      transform: rotate(45deg) translateX(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(45deg) translateX(-45px);
+      opacity: 0.7;
+    }
+  }
+</style> -->

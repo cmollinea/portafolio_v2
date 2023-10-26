@@ -2,7 +2,10 @@
 import ProjectCard from './React/ProjectCard';
 import SectionTitle from './SectionTitle.astro';
 import StyledSection from './StyledSection.astro';
-import { stack } from './React/MotionStack';
+import animecu from '../assets/images/animecu.webp';
+import samu from '../assets/images/samu.webp';
+import bazar from '../assets/images/bazar.webp';
+import bill from '../assets/images/bill.webp';
 ---
 
 <StyledSection>
@@ -16,7 +19,7 @@ import { stack } from './React/MotionStack';
         live: 'https://animecu.netlify.app/',
         github: 'https://github.com/cmollinea/AnimeCu'
       }}
-      image='/animecu.png'
+      image={animecu}
       stackIndex={[6, 5, 3]}
     >
       AnimeCu is created as a result of my journey learning NextJS and
@@ -33,7 +36,7 @@ import { stack } from './React/MotionStack';
         live: 'https://samullanes.com/',
         github: 'https://github.com/cmollinea/samu-llanes-portafolio'
       }}
-      image='samu.png'
+      image={samu}
       stackIndex={[7, 4, 5, 3]}
     >
       I created this customized website as a freelancer job for a skilled
@@ -43,14 +46,14 @@ import { stack } from './React/MotionStack';
       modern touch.
     </ProjectCard>
     <ProjectCard
-      index={1}
+      index={2}
       client:load
       title='Cuban Bazar'
       link={{
         live: 'https://cuban-bazar.vercel.app',
         github: 'https://github.com/cmollinea/bazar-online'
       }}
-      image='bazar.png'
+      image={bazar}
       stackIndex={[6, 5, 3]}
     >
       This project was created with NextJS as a result of a technical test
@@ -67,7 +70,7 @@ import { stack } from './React/MotionStack';
         live: 'https://cuban-electric-bill.vercel.app',
         github: 'https://github.com/cmollinea/cuban-electric-bill'
       }}
-      image='bill.png'
+      image={bill}
       stackIndex={[4, 5, 2]}
     >
       It is among my early projects on my self-taught progress. It uses React

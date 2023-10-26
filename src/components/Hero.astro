@@ -38,6 +38,8 @@ import MotionArrow from './React/MotionArrow';
   function hideHook() {
     if (window.scrollY >= 300) {
       scrollHook?.classList.add('hidden');
+      console.log('aaaaaaaaa');
+      window.removeEventListener('scroll', hideHook);
     }
   }
 
