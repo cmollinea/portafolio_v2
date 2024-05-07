@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { config } from '../../constants/motionProject';
 import Code from '../icons/Code';
 import External from '../icons/External';
-import { stack } from './MotionStack';
+import { stack } from './Stack';
 import type { ImageMetadata } from 'astro';
 
 type Props = {
@@ -17,6 +17,9 @@ type Props = {
   stackIndex: number[];
 };
 
+let extendedConfig = config;
+extendedConfig.variants.initial.y = 1;
+
 function ProjectCard({
   image,
   title,
@@ -27,7 +30,7 @@ function ProjectCard({
 }: Props) {
   return (
     <motion.div
-      {...config}
+      {...extendedConfig}
       transition={{ delay: index * 0.05 }}
       className='shadow-lg shadow-neutral-200/5 backdrop-blur-sm rounded-lg border border-neutral-200/10 max-w-[350px] md:max-w-xl group relative overflow-hidden'
     >

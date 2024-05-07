@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-import { config } from '../../constants/motionScale';
 import Astro from '../icons/Astro';
 import Css from '../icons/CSS';
 import Git from '../icons/Git';
@@ -26,14 +24,12 @@ function MotionStack() {
   return (
     <>
       {stack.map((tech, index) => (
-        <motion.div
+        <span
           key={index}
-          {...config}
-          transition={{ delay: 0.55 + index * 0.05 }}
           className='text-xs md:text-xl bg-neutral-300/10 backdrop-blur-sm border border-neutral-300/20 rounded-md p-1 md:p-2 flex items-center place-content-center'
         >
           {tech}
-        </motion.div>
+        </span>
       ))}
     </>
   );

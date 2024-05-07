@@ -1,36 +1,37 @@
 ---
-import MotionH1 from './React/MotionH1';
-import MotionShortDescription from './React/MotionShortDescription';
-import MotionStack from './React/MotionStack';
-import MotionButtons from './React/MotionButtons';
+import Heading from './React/Heading';
+import ShortDescription from './React/ShortDescription';
+import Stack from './React/Stack';
+import CtaButton from './React/CtaButton';
 import StyledHero from './StyledHero.astro';
 import ArrowRight from './icons/ArrowRight';
-import MotionArrow from './React/MotionArrow';
+import MotionArrow from './React/Arrow';
+import { MotionHero } from './React/MotionHero';
 ---
 
-<StyledHero>
+<MotionHero client:load>
   <div
     class='flex flex-col w-fit h-fit col-span-6 2xl:col-span-12 bg-gradient-to-tr'
   >
     <!-- <h1
-      class='font-black text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl max-md:text-center bg-gradient-to-tr from-neutral-200 to-neutral-600 bg-clip-text text-transparent'
-    >
-      Junior React Developer
-    </h1> -->
-    <MotionH1 client:load />
+    class='font-black text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl max-md:text-center bg-gradient-to-tr from-neutral-200 to-neutral-600 bg-clip-text text-transparent'
+  >
+    Junior React Developer
+  </h1> -->
+    <Heading />
     <div class='flex gap-2 mt-6'>
-      <MotionStack client:load />
+      <Stack />
     </div>
-    <MotionShortDescription client:load />
+    <ShortDescription />
 
-    <MotionButtons client:load />
+    <CtaButton />
   </div>
-  <MotionArrow client:load>
+  <MotionArrow>
     <ArrowRight
       className='text-neutral-500 rotate-90 scale-110 animate-pulse'
     />
   </MotionArrow>
-</StyledHero>
+</MotionHero>
 
 <script>
   let scrollHook = document.getElementById('scroll-hook');
