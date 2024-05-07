@@ -6,28 +6,35 @@ import animecu from '../assets/images/animecu.webp';
 import samu from '../assets/images/samu.webp';
 import bazar from '../assets/images/bazar.webp';
 import bill from '../assets/images/bill.webp';
+import calcuplador from '../assets/images/calcuplador.webp';
+import countinkly from '../assets/images/countinkly.webp';
+import mixologa from '../assets/images/mixologa.webp';
+import lambda from '../assets/images/lambda.webp';
+import movieParadise from '../assets/images/movie-paradise.webp';
 ---
 
 <StyledSection>
   <SectionTitle>Explore My Showcase</SectionTitle>
+
   <div class='mt-10 grid lg:grid-cols-2 lg:mx-20 gap-10'>
     <ProjectCard
-      client:load
-      title='AnimeCu'
       index={0}
+      client:load
+      title='Countinkly'
       link={{
-        live: 'https://animecu.netlify.app/',
-        github: 'https://github.com/cmollinea/AnimeCu'
+        live: 'https://countinkly.vercel.app/kkWWjxxLXj?source=Portfolio',
+        github: 'https://github.com/cmollinea/countinkly'
       }}
-      image={animecu}
+      image={countinkly}
       stackIndex={[6, 5, 3]}
     >
-      AnimeCu is created as a result of my journey learning NextJS and
-      TypeScript. Using the API provided by JikanMoe, I create a modern
-      interface where users can discover and search for anime and manga
-      information using advanced filters. As an added bonus, each anime includes
-      its trailer.
+      NextJS app with Shadcn, TailwindCSS, Recharts, Lucia Auth, Prisma ORM, and
+      PostgreSQL. Register and track shared links' visits (including social
+      network and country). Explore and interact with others' links through
+      likes, comments, and shares. Effortlessly manage and analyze your shared
+      content with this comprehensive platform.
     </ProjectCard>
+
     <ProjectCard
       index={1}
       client:load
@@ -46,7 +53,93 @@ import bill from '../assets/images/bill.webp';
       modern touch.
     </ProjectCard>
     <ProjectCard
-      index={2}
+      index={1}
+      client:load
+      title='Lambda Solar Website'
+      link={{
+        live: 'https://countinkly.vercel.app/tgpXR6nwE1?source=Portfolio',
+        github: 'https://github.com/cmollinea/lambda-solar-landing'
+      }}
+      image={lambda}
+      stackIndex={[7, 5, 3]}
+    >
+      Official website revamped using Astro, TailwindCSS, and DaisyUI, with
+      i18n-next for internationalization. Modernized to reflect Lambda Solar
+      Energies' cutting-edge image and latest technologies. Experience seamless
+      navigation and updated content, ensuring a dynamic and engaging user
+      experience for visitors worldwide.
+    </ProjectCard>
+    <ProjectCard
+      index={0}
+      client:load
+      title='Movie Paradise'
+      link={{
+        live: 'https://countinkly.vercel.app/V5NsLjSq27?source=Portfolio',
+        github: 'https://github.com/cmollinea/movie-paradise'
+      }}
+      image={movieParadise}
+      stackIndex={[6, 5, 3]}
+    >
+      NextJS with NextUI and TailwindCSS, powered by Supabase. Access TMDB API
+      for comprehensive movie and TV show details, including descriptions,
+      images, and trailers. Register to comment, mark favorites, and create
+      watchlists. Seamlessly manage your movie experience with this interactive
+      platform.
+    </ProjectCard>
+    <ProjectCard
+      index={1}
+      client:load
+      title='Mixóloga E-Menu'
+      link={{
+        live: 'https://countinkly.vercel.app/SRp5b7-Kk0?source=Portfolio',
+        github: 'https://github.com/cmollinea/mixologa-menu'
+      }}
+      image={mixologa}
+      stackIndex={[7, 5, 3]}
+    >
+      Astro and TailwindCSS craft a minimal vintage menu for this Vedado Bar (La
+      Mixóloga) located in Vedado, Havana, Cuba. Seamlessly integrated with
+      Contentful CMS for easy updates. Enjoy internationalization via Astro and
+      Contentful locales, ensuring a smooth user experience for patrons from
+      around the world.
+    </ProjectCard>
+    <ProjectCard
+      index={0}
+      client:load
+      title='calCUPlator'
+      link={{
+        live: 'https://countinkly.vercel.app/ugJ2TNsjWF?source=Portfolio',
+        github: 'https://github.com/cmollinea/calcuplator'
+      }}
+      image={calcuplador}
+      stackIndex={[6, 5, 3]}
+    >
+      Experience real-time USD and MLC exchange rates and formats in Cuba
+      through this NextJS-powered web app. TailwindCSS and ShadCn ensures a
+      polished design. Manage state seamlessly with Zustand. Stay updated on
+      currency fluctuations effortlessly, simplifying your financial decisions
+      with accurate, up-to-date information.
+    </ProjectCard>
+
+    <ProjectCard
+      client:load
+      title='AnimeCu'
+      index={0}
+      link={{
+        live: 'https://animecu.netlify.app/',
+        github: 'https://github.com/cmollinea/AnimeCu'
+      }}
+      image={animecu}
+      stackIndex={[6, 5, 3]}
+    >
+      AnimeCu is created as a result of my journey learning NextJS and
+      TypeScript. Using the API provided by JikanMoe, I create a modern
+      interface where users can discover and search for anime and manga
+      information using advanced filters. As an added bonus, each anime includes
+      its trailer.
+    </ProjectCard>
+    <ProjectCard
+      index={0}
       client:load
       title='Cuban Bazar'
       link={{
@@ -63,7 +156,7 @@ import bill from '../assets/images/bill.webp';
       'shopping cart' feature with local storage persistence.
     </ProjectCard>
     <ProjectCard
-      index={3}
+      index={1}
       client:load
       title='Electric Bill Calculator'
       link={{
