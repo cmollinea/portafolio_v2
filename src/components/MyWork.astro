@@ -11,166 +11,88 @@ import countinkly from '../assets/images/countinkly.webp';
 import mixologa from '../assets/images/mixologa.webp';
 import lambda from '../assets/images/lambda.webp';
 import movieParadise from '../assets/images/movie-paradise.webp';
+import content from '../content/content.json';
+
+// This variable index must match with content index
+const sharedInfo = [
+  {
+    live: 'https://countinkly.vercel.app/kkWWjxxLXj?source=Portfolio',
+    github: 'https://github.com/cmollinea/countinkly',
+    image: countinkly,
+    stackIndex: [6, 5, 3]
+  },
+  {
+    live: 'https://samullanes.com/',
+    github: 'https://github.com/cmollinea/samu-llanes-portafolio',
+    image: samu,
+    stackIndex: [7, 4, 5, 3]
+  },
+
+  {
+    live: 'https://countinkly.vercel.app/tgpXR6nwE1?source=Portfolio',
+    github: 'https://github.com/cmollinea/lambda-solar-landing',
+    image: lambda,
+    stackIndex: [7, 5, 3]
+  },
+  {
+    live: 'https://countinkly.vercel.app/V5NsLjSq27?source=Portfolio',
+    github: 'https://github.com/cmollinea/movie-paradise',
+    image: movieParadise,
+    stackIndex: [6, 5, 3]
+  },
+  {
+    live: 'https://countinkly.vercel.app/SRp5b7-Kk0?source=Portfolio',
+    github: 'https://github.com/cmollinea/mixologa-menu',
+    image: mixologa,
+    stackIndex: [7, 5, 3]
+  },
+  {
+    live: 'https://countinkly.vercel.app/ugJ2TNsjWF?source=Portfolio',
+    github: 'https://github.com/cmollinea/calcuplator',
+    image: calcuplador,
+    stackIndex: [6, 5, 3]
+  },
+  {
+    live: 'https://animecu.netlify.app/',
+    github: 'https://github.com/cmollinea/AnimeCu',
+    image: animecu,
+    stackIndex: [6, 5, 3]
+  },
+  {
+    live: 'https://cuban-bazar.vercel.app',
+    github: 'https://github.com/cmollinea/bazar-online',
+    image: bazar,
+    stackIndex: [6, 5, 3]
+  },
+  {
+    live: 'https://cuban-electric-bill.vercel.app',
+    github: 'https://github.com/cmollinea/cuban-electric-bill',
+    image: bill,
+    stackIndex: [4, 5, 2]
+  }
+];
 ---
 
 <StyledSection>
-  <SectionTitle>Explore My Showcase</SectionTitle>
+  <SectionTitle>{content.en.myWork.heading}</SectionTitle>
 
   <div class='mt-10 grid lg:grid-cols-2 lg:mx-20 gap-10'>
-    <ProjectCard
-      index={0}
-      client:load
-      title='Countinkly'
-      link={{
-        live: 'https://countinkly.vercel.app/kkWWjxxLXj?source=Portfolio',
-        github: 'https://github.com/cmollinea/countinkly'
-      }}
-      image={countinkly}
-      stackIndex={[6, 5, 3]}
-    >
-      NextJS app with Shadcn, TailwindCSS, Recharts, Lucia Auth, Prisma ORM, and
-      PostgreSQL. Register and track shared links' visits (including social
-      network and country). Explore and interact with others' links through
-      likes, comments, and shares. Effortlessly manage and analyze your shared
-      content with this comprehensive platform.
-    </ProjectCard>
-
-    <ProjectCard
-      index={1}
-      client:load
-      title='Samu LLanes Website'
-      link={{
-        live: 'https://samullanes.com/',
-        github: 'https://github.com/cmollinea/samu-llanes-portafolio'
-      }}
-      image={samu}
-      stackIndex={[7, 4, 5, 3]}
-    >
-      I created this customized website as a freelancer job for a skilled
-      photographer based in Havana, Cuba. I used Astro as the main technology
-      and integrated React for interactions. I optimized its SEO considering
-      best practices and used Framer Motion to add subtle animations for a
-      modern touch.
-    </ProjectCard>
-    <ProjectCard
-      index={1}
-      client:load
-      title='Lambda Solar Website'
-      link={{
-        live: 'https://countinkly.vercel.app/tgpXR6nwE1?source=Portfolio',
-        github: 'https://github.com/cmollinea/lambda-solar-landing'
-      }}
-      image={lambda}
-      stackIndex={[7, 5, 3]}
-    >
-      Official website revamped using Astro, TailwindCSS, and DaisyUI, with
-      i18n-next for internationalization. Modernized to reflect Lambda Solar
-      Energies' cutting-edge image and latest technologies. Experience seamless
-      navigation and updated content, ensuring a dynamic and engaging user
-      experience for visitors worldwide.
-    </ProjectCard>
-    <ProjectCard
-      index={0}
-      client:load
-      title='Movie Paradise'
-      link={{
-        live: 'https://countinkly.vercel.app/V5NsLjSq27?source=Portfolio',
-        github: 'https://github.com/cmollinea/movie-paradise'
-      }}
-      image={movieParadise}
-      stackIndex={[6, 5, 3]}
-    >
-      NextJS with NextUI and TailwindCSS, powered by Supabase. Access TMDB API
-      for comprehensive movie and TV show details, including descriptions,
-      images, and trailers. Register to comment, mark favorites, and create
-      watchlists. Seamlessly manage your movie experience with this interactive
-      platform.
-    </ProjectCard>
-    <ProjectCard
-      index={1}
-      client:load
-      title='Mixóloga E-Menu'
-      link={{
-        live: 'https://countinkly.vercel.app/SRp5b7-Kk0?source=Portfolio',
-        github: 'https://github.com/cmollinea/mixologa-menu'
-      }}
-      image={mixologa}
-      stackIndex={[7, 5, 3]}
-    >
-      Astro and TailwindCSS craft a minimal vintage menu for this Vedado Bar (La
-      Mixóloga) located in Vedado, Havana, Cuba. Seamlessly integrated with
-      Contentful CMS for easy updates. Enjoy internationalization via Astro and
-      Contentful locales, ensuring a smooth user experience for patrons from
-      around the world.
-    </ProjectCard>
-    <ProjectCard
-      index={0}
-      client:load
-      title='calCUPlator'
-      link={{
-        live: 'https://countinkly.vercel.app/ugJ2TNsjWF?source=Portfolio',
-        github: 'https://github.com/cmollinea/calcuplator'
-      }}
-      image={calcuplador}
-      stackIndex={[6, 5, 3]}
-    >
-      Experience real-time USD and MLC exchange rates and formats in Cuba
-      through this NextJS-powered web app. TailwindCSS and ShadCn ensures a
-      polished design. Manage state seamlessly with Zustand. Stay updated on
-      currency fluctuations effortlessly, simplifying your financial decisions
-      with accurate, up-to-date information.
-    </ProjectCard>
-
-    <ProjectCard
-      client:load
-      title='AnimeCu'
-      index={0}
-      link={{
-        live: 'https://animecu.netlify.app/',
-        github: 'https://github.com/cmollinea/AnimeCu'
-      }}
-      image={animecu}
-      stackIndex={[6, 5, 3]}
-    >
-      AnimeCu is created as a result of my journey learning NextJS and
-      TypeScript. Using the API provided by JikanMoe, I create a modern
-      interface where users can discover and search for anime and manga
-      information using advanced filters. As an added bonus, each anime includes
-      its trailer.
-    </ProjectCard>
-    <ProjectCard
-      index={0}
-      client:load
-      title='Cuban Bazar'
-      link={{
-        live: 'https://cuban-bazar.vercel.app',
-        github: 'https://github.com/cmollinea/bazar-online'
-      }}
-      image={bazar}
-      stackIndex={[6, 5, 3]}
-    >
-      This project was created with NextJS as a result of a technical test
-      launched by Mercado Libre. I used NextUI as a component library due to its
-      easy integration with Tailwind CSS. I used route handler to simulate my
-      own API with mocked JSON data. Additionally, I used Zustand to include a
-      'shopping cart' feature with local storage persistence.
-    </ProjectCard>
-    <ProjectCard
-      index={1}
-      client:load
-      title='Electric Bill Calculator'
-      link={{
-        live: 'https://cuban-electric-bill.vercel.app',
-        github: 'https://github.com/cmollinea/cuban-electric-bill'
-      }}
-      image={bill}
-      stackIndex={[4, 5, 2]}
-    >
-      It is among my early projects on my self-taught progress. It uses React
-      with Tailwind CSS and was born out of the idea that although there are
-      mobile apps that calculate your electricity consumption, why occupy
-      storage space when you can have it at your disposal through a web page? It
-      utilizes React Hook Form to achieve proper user inputs.
-    </ProjectCard>
+    {
+      content.en.myWork.projects.map((project, index) => (
+        <ProjectCard
+          index={index % 2 === 0 ? 0 : 1}
+          client:load
+          title={project.title}
+          link={{
+            live: sharedInfo[index].live,
+            github: sharedInfo[index].github
+          }}
+          image={sharedInfo[index].image}
+          stackIndex={sharedInfo[index].stackIndex}
+        >
+          {project.description}
+        </ProjectCard>
+      ))
+    }
   </div>
 </StyledSection>

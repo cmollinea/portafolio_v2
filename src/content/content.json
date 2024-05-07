@@ -1,0 +1,65 @@
+{
+  "en": {
+    "hero": {
+      "heading": "Front-End Developer",
+      "small": "& Electrical Engineer ⚡",
+      "shortDescription": "Through dedication, perseverance, and a <b class='bg-gradient-to-tr from-amber-500 via-amber-500 to-red-400 bg-clip-text text-transparent'>thirst for knowledge</b>, I am on a journey of <b class='bg-gradient-to-tr from-amber-500 via-amber-500 to-red-400 bg-clip-text text-transparent'>continuous improvement</b>, eager to make a <b class='bg-gradient-to-tr from-amber-500 via-amber-500 to-red-400 bg-clip-text text-transparent'>meaningful impact</b> in the ever-evolving world of web development. 🚀💻",
+      "ctaButtonLabel": "Get in touch"
+    },
+    "myWork": {
+      "heading": "Explore My Showcase",
+      "projects": [
+        {
+          "title": "Countinkly",
+          "description": "NextJS app with Shadcn, TailwindCSS, Recharts, Lucia Auth, Prisma ORM, and PostgreSQL. Register and track shared links' visits (including social network and country). Explore and interact with others' links through likes, comments, and shares. Effortlessly manage and analyze your shared content with this comprehensive platform."
+        },
+        {
+          "title": "Samu LLanes Website",
+          "description": "I created this customized website as a freelancer job for a skilled photographer based in Havana, Cuba. I used Astro as the main technology and integrated React for interactions. I optimized its SEO considering best practices and used Framer Motion to add subtle animations for a modern touch."
+        },
+        {
+          "title": "Lambda Solar Website",
+          "description": "Official website revamped using Astro, TailwindCSS, and DaisyUI, with i18n-next for internationalization. Modernized to reflect Lambda Solar Energies' cutting-edge image and latest technologies. Experience seamless navigation and updated content, ensuring a dynamic and engaging user experience for visitors worldwide."
+        },
+        {
+          "title": "Movie Paradise",
+          "description": "NextJS with NextUI and TailwindCSS, powered by Supabase. Access TMDB API for comprehensive movie and TV show details, including descriptions, images, and trailers. Register to comment, mark favorites, and create watchlists. Seamlessly manage your movie experience with this interactive platform."
+        },
+        {
+          "title": "Mixóloga E-Menu",
+          "description": "I designed and created  a minimal vintage menu for this Bar (La Mixóloga) located in Vedado, Havana, Cuba. Seamlessly integrated with Contentful CMS for easy updates. Enjoy internationalization via Astro and Contentful locales, ensuring a smooth user experience for patrons from around the world."
+        },
+        {
+          "title": "calCUPlator",
+          "description": " Experience real-time USD and MLC exchange rates and formats in Cuba through this NextJS-powered web app. TailwindCSS and ShadCn ensures a polished design. Manage state seamlessly with Zustand. Stay updated on currency fluctuations effortlessly, simplifying your financial decisions with accurate, up-to-date information."
+        },
+        {
+          "title": "AnimeCu",
+          "description": " AnimeCu is created as a result of my journey learning NextJS and TypeScript. Using the API provided by JikanMoe, I create a modern interface where users can discover and search for anime and manga information using advanced filters. As an added bonus, each anime includes its trailer."
+        },
+        {
+          "title": "Cuban Bazar",
+          "description": "This project was created with NextJS as a result of a technical test launched by Mercado Libre. I used NextUI as a component library due to its easy integration with Tailwind CSS. I used route handler to simulate my own API with mocked JSON data. Additionally, I used Zustand to include a 'shopping cart' feature with local storage persistence."
+        },
+        {
+          "title": "Electric Bill Calculator",
+          "description": "It is among my early projects on my self-taught progress. It uses React with Tailwind CSS and was born out of the idea that although there are mobile apps that calculate your electricity consumption, why occupy storage space when you can have it at your disposal through a web page? It utilizes React Hook Form to achieve proper user inputs."
+        }
+      ]
+    },
+    "aboutMe": {
+      "heading": "A Brief Introduction of Myself: Unveiling My Journey",
+      "description": "<p class='max-w-2xl w-full px-2 mt-10'>My name is Carlos Yoan and I'm a passionate web developer from Cuba. I'am 25 years old, I graduated as an <b>Electrical Engineer</b>from <b>Marta Abreu Central University of Las Villas.</b> Throughout my education, I discovered my passion for programming and decided to embark on a <b>self-taught path</b> in web development.</p><p class='max-w-2xl mt-4 w-full px-2'>From the start, my main focus has been on <b>front-end development,</b>and I have used <b> React<b> as the central pillar of my tech stack. I <b>love working</b> on the user interface, designing <b>attractive and functional</b> web experiencesthat provide meaningful value to users.</p><p class='max-w-2xl mt-4 w-full px-2'>Although I currently don't have real work experience in this field, I am eager to embark on my first opportunity to further <b>develop myself</b> as part of a professional team. I'm excited about the idea of <b>learning</b> from<b> experienced professionals</b> and <b>contributing</b> my skills and knowledge to exciting projects. <br /></p><p class='bg-gradient-to-tr from-amber-500 via-amber-500 to-red-400 bg-clip-text text-transparent w-full px-2 font-bold max-w-2xl mt-4'>I am determined to continue improving my web development skills, learning new technologies, and staying up-to-date!</p>"
+    },
+    "contact": {
+      "heading": "Follow me on my social media! Let's connect and stay in touch!",
+      "message": "Also you can send me a direct message and get a cool toast!",
+      "messageButtonLabel": "Send Direct Message"
+    },
+    "tools": {
+      "heading": "Unleash Your Coding Superpowers: Discover the Tools Behind the Magic!",
+      "stayTunned": "My web development quest is full of exciting updates. Stay tuned for more!"
+    }
+  },
+  "es": {}
+}

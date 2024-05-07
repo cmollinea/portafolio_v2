@@ -47,7 +47,7 @@ function ProjectCard({
           href={link.live}
           rel='noopener nofollow'
           target='_blank'
-          className='text-2xl md:text-4xl font-bold text-red-500 flex items-center py-0.5 hover:underline'
+          className='text-2xl md:text-4xl font-bold text-amber-500 flex items-center py-0.5 hover:underline'
         >
           {title} <External />
         </a>
@@ -64,7 +64,7 @@ function ProjectCard({
         <p className='text-sm md:text-base pt-2'>{children}</p>
         <a
           href={link.github}
-          className='text-lg font-bold text-red-500 hover:underline flex items-center mt-2'
+          className='text-lg font-bold text-amber-500 hover:underline flex items-center mt-2'
         >
           <Code />
           Code

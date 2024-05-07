@@ -22,7 +22,7 @@ export const stack = [
 
 function MotionStack() {
   return (
-    <>
+    <div className='flex gap-2 mt-6'>
       {stack.map((tech, index) => (
         <span
           key={index}
@@ -31,7 +31,7 @@ function MotionStack() {
           {tech}
         </span>
       ))}
-    </>
+    </div>
   );
 }
 export default MotionStack;

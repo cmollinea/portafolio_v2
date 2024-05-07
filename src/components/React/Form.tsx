@@ -1,4 +1,4 @@
-import { SyntheticEvent, useRef, useState } from 'react';
+import { type SyntheticEvent, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from 'sonner';
 import Send from '../icons/Send';
