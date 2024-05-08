@@ -1,7 +1,7 @@
 const variants = {
   initial: {
     opacity: 0,
-    y: 5
+    y: 10
   },
 
   animate: {
@@ -13,6 +13,7 @@ export const config = {
   variants: variants,
   initial: 'initial',
   whileInView: 'animate',
-  transition: { duration: 0.1, ease: 'easeIn' },
+  transition: { duration: 0.3, ease: 'backInOut' },
   viewport: { once: true }
 };
+
