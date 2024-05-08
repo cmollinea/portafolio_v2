@@ -13,7 +13,7 @@ export const config = {
   variants: variants,
   initial: 'initial',
   whileInView: 'animate',
-  transition: { duration: 0.3, ease: 'backInOut' },
+  transition: { duration: 1, ease: 'backInOut' },
   viewport: { once: true }
 };
 
