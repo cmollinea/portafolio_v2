@@ -1,11 +1,11 @@
-import content from '../../content/content.json';
+import content from '../../constants/content.json';
 
 function CtaButton() {
   return (
     <>
       <a
         href='#social'
-        className='p-2 border border-neutral-300/80  hover:text-black hover:bg-amber-500 hover:border-amber-500 rounded-lg transition-colors ease-in-out font-bold text-2xl font-mono text-center max-w-md'
+        className='p-2 border bg-neutral-300 text-black font-bold text-center rounded-md block mt-4'
       >
         {content.en.hero.ctaButtonLabel}
       </a>

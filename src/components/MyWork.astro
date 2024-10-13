@@ -11,52 +11,16 @@ import countinkly from '../assets/images/countinkly.webp';
 import mixologa from '../assets/images/mixologa.webp';
 import lambda from '../assets/images/lambda.webp';
 import movieParadise from '../assets/images/movie-paradise.webp';
-import content from '../content/content.json';
+import content from '../constants/content.json';
 
 // This variable index must match with content index
-const sharedInfo = [
+const shaindigoInfo = [
   {
     live: 'https://countinkly.vercel.app/kkWWjxxLXj?source=Portfolio',
     github: 'https://github.com/cmollinea/countinkly',
     image: countinkly,
-    stackIndex: [6, 5, 3]
-  },
-  {
-    live: 'https://samullanes.com/',
-    github: 'https://github.com/cmollinea/samu-llanes-portafolio',
-    image: samu,
-    stackIndex: [7, 4, 5, 3]
-  },
-
-  {
-    live: 'https://countinkly.vercel.app/tgpXR6nwE1?source=Portfolio',
-    github: 'https://github.com/cmollinea/lambda-solar-landing',
-    image: lambda,
-    stackIndex: [7, 5, 3]
-  },
-  {
-    live: 'https://countinkly.vercel.app/V5NsLjSq27?source=Portfolio',
-    github: 'https://github.com/cmollinea/movie-paradise',
-    image: movieParadise,
-    stackIndex: [6, 5, 3]
-  },
-  {
-    live: 'https://countinkly.vercel.app/SRp5b7-Kk0?source=Portfolio',
-    github: 'https://github.com/cmollinea/mixologa-menu',
-    image: mixologa,
-    stackIndex: [7, 5, 3]
-  },
-  {
-    live: 'https://countinkly.vercel.app/ugJ2TNsjWF?source=Portfolio',
-    github: 'https://github.com/cmollinea/calcuplator',
-    image: calcuplador,
-    stackIndex: [6, 5, 3]
-  },
-  {
-    live: 'https://animecu.netlify.app/',
-    github: 'https://github.com/cmollinea/AnimeCu',
-    image: animecu,
-    stackIndex: [6, 5, 3]
+    stackIndex: [6, 5, 3],
+    className: 'col-span-4 row-span-2'
   },
   {
     live: 'https://cuban-bazar.vercel.app',
@@ -69,6 +33,48 @@ const sharedInfo = [
     github: 'https://github.com/cmollinea/cuban-electric-bill',
     image: bill,
     stackIndex: [4, 5, 2]
+  },
+  {
+    live: 'https://samullanes.com/',
+    github: 'https://github.com/cmollinea/samu-llanes-portafolio',
+    image: samu,
+    stackIndex: [7, 4, 5, 3],
+    className: 'col-span-4 row-span-2'
+  },
+
+  {
+    live: 'https://countinkly.vercel.app/SRp5b7-Kk0?source=Portfolio',
+    github: 'https://github.com/cmollinea/mixologa-menu',
+    image: mixologa,
+    stackIndex: [7, 5, 3]
+  },
+  {
+    live: 'https://countinkly.vercel.app/ugJ2TNsjWF?source=Portfolio',
+    github: 'https://github.com/cmollinea/calcuplator',
+    image: calcuplador,
+    stackIndex: [6, 5, 3]
+  },
+
+  {
+    live: 'https://countinkly.vercel.app/V5NsLjSq27?source=Portfolio',
+    github: 'https://github.com/cmollinea/movie-paradise',
+    image: movieParadise,
+    stackIndex: [6, 5, 3],
+    className: 'col-span-4 row-span-2'
+  },
+
+  {
+    live: 'https://countinkly.vercel.app/tgpXR6nwE1?source=Portfolio',
+    github: 'https://github.com/cmollinea/lambda-solar-landing',
+    image: lambda,
+    stackIndex: [7, 5, 3]
+  },
+
+  {
+    live: 'https://animecu.netlify.app/',
+    github: 'https://github.com/cmollinea/AnimeCu',
+    image: animecu,
+    stackIndex: [6, 5, 3]
   }
 ];
 ---
@@ -76,19 +82,20 @@ const sharedInfo = [
 <StyledSection>
   <SectionTitle>{content.en.myWork.heading}</SectionTitle>
 
-  <div class='mt-10 grid lg:grid-cols-2 lg:mx-20 gap-10'>
+  <div class='mt-10 grid grid-cols-8 gap-6 justify-items-center'>
     {
       content.en.myWork.projects.map((project, index) => (
         <ProjectCard
+          className={shaindigoInfo[index].className ?? 'col-span-2 row-span-1'}
           index={index % 2 === 0 ? 0 : 1}
           client:load
           title={project.title}
           link={{
-            live: sharedInfo[index].live,
-            github: sharedInfo[index].github
+            live: shaindigoInfo[index].live,
+            github: shaindigoInfo[index].github
           }}
-          image={sharedInfo[index].image}
-          stackIndex={sharedInfo[index].stackIndex}
+          image={shaindigoInfo[index].image}
+          stackIndex={shaindigoInfo[index].stackIndex}
         >
           {project.description}
         </ProjectCard>

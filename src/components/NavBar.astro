@@ -1,22 +1,35 @@
-<nav
-  class='h-16 flex items-center backdrop-blur-md sticky top-0 z-50 border-b rounded-b-xl border-neutral-300/20 px-4 bg-[#050505]/80 justify-between'
+---
+
+---
+
+<header
+  class='py-2 col-span-12 w-full flex items-center z-50 border rounded-xl border-neutral-500/20 px-4 bg-neutral-500/5 justify-between mx-auto box-border mt-10'
 >
-  <div class='flex items-center'>
-    <img
-      src='/hero.JPG'
-      class='h-12 w-12 rounded-full object-cover object-top border-2 border-neutral-200/50'
-    />
-    <div class='flex flex-col px-2 text-red font-medium'>
-      <span class='text-sm'>Carlos Yoan</span>
-      <span class='text-xs opacity-80'>@procastinatorDev</span>
+  <div class='flex items-center relative'>
+    <div class='ring-1 ring-neutral-50/20 rounded-full overflow-hidden'>
+      <img src='/og.png' class='h-12 w-12 object-cover' />
+    </div>
+
+    <div
+      class='flex flex-col px-2 text-indigo font-medium absolute top-0 left-6'
+    >
+      <div
+        class='flex items-center gap-0.5 bg-green-600/5 place-content-center rounded-xl ring-1 ring-inset ring-green-600/10 p-1'
+      >
+        <span
+          class='block h-3 w-3 rounded-full bg-green-600 after:block after:w-3 after:h-3 after:bg-green-600 after:animate-ping after:rounded-full'
+        ></span><span class='text-green-600 text-[0.7rem] sr-only'
+          >Available</span
+        >
+      </div>
     </div>
   </div>
-  <div class='text-xs grid grid-cols-2 gap-2 max-md:px-1 px-6 font-semibold'>
+  <nav class='text-xs grid grid-cols-2 gap-2 max-md:px-1 px-6 font-semibold'>
     <a href='#social' class='hover:underline
-   hover:text-amber-500'>Contact</a>
+   hover:text-teal-500'>Contact</a>
     <a href='#about_me' class='hover:underline
-   hover:text-amber-500'
+   hover:text-teal-500'
       >About Me</a
     >
-  </div>
-</nav>
+  </nav>
+</header>

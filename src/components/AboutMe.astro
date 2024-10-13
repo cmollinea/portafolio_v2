@@ -1,15 +1,19 @@
 ---
 import SectionTitle from './SectionTitle.astro';
-import StyledSection from './StyledSection.astro';
-import content from '../content/content.json';
+import content from '../constants/content.json';
+import MyTools from './MyTools.astro';
 ---
 
-<StyledSection>
-  <SectionTitle id='about_me'>
-    {content.en.aboutMe.heading}
-  </SectionTitle>
-  <article
-    class='grid place-content-center'
-    set:html={content.en.aboutMe.description}
-  />
-</StyledSection>
+<div class='col-span-8 flex flex-col gap-2 h-fit'>
+  <div class='bento-container flex w-full flex-col items-center p-4'>
+    <SectionTitle id='about_me'>
+      {content.en.aboutMe.heading}
+    </SectionTitle>
+    <article
+      class='grid place-content-center'
+      set:html={content.en.aboutMe.description}
+    />
+  </div>
+
+  <MyTools />
+</div>

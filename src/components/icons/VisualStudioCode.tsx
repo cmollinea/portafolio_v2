@@ -3,7 +3,7 @@ function VisualStudioCode() {
     <svg
       role='img'
       viewBox='0 0 24 24'
-      className='h-16 fill-neutral-500 group-hover:fill-amber-500 ease-in-out transition-colors'
+      className='h-16 fill-neutral-500 group-hover:fill-teal-500 ease-in-out transition-colors'
       xmlns='http://www.w3.org/2000/svg'
     >
       <title>Visual Studio Code</title>

@@ -15,6 +15,7 @@ type Props = {
   index: number;
   children: React.ReactNode;
   stackIndex: number[];
+  className?: string;
 };
 
 let extendedConfig = config;
@@ -26,28 +27,35 @@ function ProjectCard({
   link,
   index,
   children,
-  stackIndex
+  stackIndex,
+  className
 }: Props) {
   return (
-    <motion.div
-      {...extendedConfig}
-      transition={{ delay: index * 0.05 }}
-      className='shadow-lg shadow-neutral-200/5 backdrop-blur-sm rounded-lg border border-neutral-200/10 max-w-[350px] md:max-w-xl group relative overflow-hidden'
+    <button
+      className={`shadow-lg shadow-neutral-200/5 backdrop-blur-sm  rounded-lg group relative overflow-hidden ${
+        className && className
+      }`}
     >
       <div className='relative overflow-hidden'>
         <img
           src={image.src}
           width={image.width}
           height={image.height}
-          className='relative rounded-t-lg object-cover h-full max-h-80'
+          className='relative rounded-t-lg object-cover grayscale group-hover:grayscale-0 transition-all ease-in-out'
         />
       </div>
-      <div className='p-6 relative text-lg'>
+
+      <div className='absolute bottom-0 left-0 right-0 top-0  z-10 backdrop-blur-[1px] flex items-center place-content-center bg-black/50 transition-all ease-in-out opacity-0 group-hover:opacity-100'>
+        <div className='text-xl font-bold bg-neutral-300 text-black px-6 py-3 rounded-md text-center '>
+          Details
+        </div>
+      </div>
+      {/* <div className='p-6 relative text-lg'>
         <a
           href={link.live}
           rel='noopener nofollow'
           target='_blank'
-          className='text-2xl md:text-4xl font-bold text-amber-500 flex items-center py-0.5 hover:underline'
+          className='text-2xl md:text-4xl font-bold text-teal-500 flex items-center py-0.5 hover:underline'
         >
           {title} <External />
         </a>
@@ -64,13 +72,13 @@ function ProjectCard({
         <p className='text-sm md:text-base pt-2'>{children}</p>
         <a
           href={link.github}
-          className='text-lg font-bold text-amber-500 hover:underline flex items-center mt-2'
+          className='text-lg font-bold text-teal-500 hover:underline flex items-center mt-2'
         >
           <Code />
           Code
         </a>
-      </div>
-    </motion.div>
+      </div> */}
+    </button>
   );
 }
 export default ProjectCard;

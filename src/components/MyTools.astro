@@ -6,80 +6,69 @@ import Terminal from './icons/Terminal';
 import GoogleFont from './icons/GoogleFont';
 import OperaGX from './icons/OperaGX';
 import Theme from './icons/Theme';
-import content from '../content/content.json';
+import content from '../constants/content.json';
 ---
 
-<StyledSection>
-  <SectionTitle>
-    {content.en.tools.heading}
-  </SectionTitle>
-
-  <div
-    class='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-content-center items-center gap-10 lg:gap-20 mt-20 mx-autow-full pb-20'
+<div class='col-span-6 grid grid-cols-5 gap-2'>
+  <a
+    target='_blank'
+    href='https://code.visualstudio.com'
+    class='flex flex-col min-[1000px]:gap-4 group place-content-center items-center bento-container p-4 rounded-md'
   >
-    <a
-      target='_blank'
-      href='https://code.visualstudio.com'
-      class='flex flex-col gap-4 group place-content-center items-center'
+    <VisualStudioCode />
+    <p
+      class='text-neutral-500 group-hover:text-teal-500 transition-colors ease-in-out font-bold text-xs'
     >
-      <VisualStudioCode />
-      <p
-        class='text-neutral-500 group-hover:text-amber-500 transition-colors ease-in-out font-bold text-lg'
-      >
-        VS Code
-      </p>
-    </a>
-    <a
-      target='_blank'
-      href='https://ohmyposh.dev'
-      class='flex flex-col gap-4 group place-content-center items-center'
+      <span class='max-[1000px]:sr-only'> VS Code </span>
+    </p>
+  </a>
+  <a
+    target='_blank'
+    href='https://ohmyposh.dev'
+    class='flex flex-col min-[1000px]:gap-4 group place-content-center items-center bento-container'
+  >
+    <Terminal />
+    <p
+      class='text-neutral-500 group-hover:text-teal-500 transition-colors ease-in-out font-bold text-xs'
     >
-      <Terminal />
-      <p
-        class='text-neutral-500 group-hover:text-amber-500 transition-colors ease-in-out font-bold text-lg'
-      >
-        Oh My Posh
-      </p>
-    </a>
-    <a
-      target='_blank'
-      href='https://www.opera.com/es/gx'
-      class='flex flex-col gap-4 group place-content-center items-center'
+      <span class='max-[1000px]:sr-only'> Oh My Posh</span>
+    </p>
+  </a>
+  <a
+    target='_blank'
+    href='https://www.opera.com/es/gx'
+    class='flex flex-col min-[1000px]:gap-4 group place-content-center items-center bento-container'
+  >
+    <OperaGX />
+    <p
+      class='text-neutral-500 group-hover:text-teal-500 transition-colors ease-in-out font-bold text-xs'
     >
-      <OperaGX />
-      <p
-        class='text-neutral-500 group-hover:text-amber-500 transition-colors ease-in-out font-bold text-lg'
-      >
-        OperaGX
-      </p>
-    </a>
+      <span class='max-[1000px]:sr-only'> OperaGX</span>
+    </p>
+  </a>
 
-    <a
-      target='_blank'
-      href='https://fonts.google.com'
-      class='flex flex-col gap-4 group place-content-center items-center'
+  <a
+    target='_blank'
+    href='https://fonts.google.com'
+    class='flex flex-col min-[1000px]:gap-4 group place-content-center items-center bento-container'
+  >
+    <GoogleFont />
+    <p
+      class='text-neutral-500 group-hover:text-teal-500 transition-colors ease-in-out font-bold text-xs'
     >
-      <GoogleFont />
-      <p
-        class='text-neutral-500 group-hover:text-amber-500 transition-colors ease-in-out font-bold text-lg'
-      >
-        Fira Code
-      </p>
-    </a>
-    <a
-      target='_blank'
-      href='https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme'
-      class='flex flex-col gap-4 group place-content-center items-center'
+      <span class='max-[1000px]:sr-only'> Fira Code</span>
+    </p>
+  </a>
+  <a
+    target='_blank'
+    href='https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme'
+    class='flex flex-col min-[1000px]:gap-4 group place-content-center items-center bento-container'
+  >
+    <Theme />
+    <p
+      class='text-neutral-500 group-hover:text-teal-500 transition-colors ease-in-out font-bold text-xs'
     >
-      <Theme />
-      <p
-        class='text-neutral-500 group-hover:text-amber-500 transition-colors ease-in-out font-bold text-lg'
-      >
-        One Dark Pro
-      </p>
-    </a>
-  </div>
-  <SectionTitle>
-    {content.en.tools.stayTunned}
-  </SectionTitle>
-</StyledSection>
+      <span class='max-[1000px]:sr-only'> One Dark Pro</span>
+    </p>
+  </a>
+</div>

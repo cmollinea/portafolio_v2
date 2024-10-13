@@ -3,7 +3,7 @@
     "hero": {
       "heading": "Front-End Developer",
       "small": "& Electrical Engineer ⚡",
-      "shortDescription": "Through dedication, perseverance, and a <b class='bg-gradient-to-tr from-amber-500 via-amber-500 to-red-400 bg-clip-text text-transparent'>thirst for knowledge</b>, I am on a journey of <b class='bg-gradient-to-tr from-amber-500 via-amber-500 to-red-400 bg-clip-text text-transparent'>continuous improvement</b>, eager to make a <b class='bg-gradient-to-tr from-amber-500 via-amber-500 to-red-400 bg-clip-text text-transparent'>meaningful impact</b> in the ever-evolving world of web development. 🚀💻",
+      "shortDescription": "Through dedication, perseverance, and a <b class='bg-gradient-to-tr from-blue-500 via-blue-500 to-indigo-400 bg-clip-text text-transparent'>thirst for knowledge</b>, I am on a journey of <b class='bg-gradient-to-tr from-blue-500 via-blue-500 to-indigo-400 bg-clip-text text-transparent'>continuous improvement</b>, eager to make a <b class='bg-gradient-to-tr from-blue-500 via-blue-500 to-indigo-400 bg-clip-text text-transparent'>meaningful impact</b> in the ever-evolving world of web development. 🚀💻",
       "ctaButtonLabel": "Get in touch"
     },
     "myWork": {
@@ -11,7 +11,7 @@
       "projects": [
         {
           "title": "Countinkly",
-          "description": "NextJS app with Shadcn, TailwindCSS, Recharts, Lucia Auth, Prisma ORM, and PostgreSQL. Register and track shared links' visits (including social network and country). Explore and interact with others' links through likes, comments, and shares. Effortlessly manage and analyze your shared content with this comprehensive platform."
+          "description": "NextJS app with Shadcn, TailwindCSS, Recharts, Lucia Auth, Prisma ORM, and PostgreSQL. Register and track shaindigo links' visits (including social network and country). Explore and interact with others' links through likes, comments, and shares. Effortlessly manage and analyze your shaindigo content with this comprehensive platform."
         },
         {
           "title": "Samu LLanes Website",
@@ -23,7 +23,7 @@
         },
         {
           "title": "Movie Paradise",
-          "description": "NextJS with NextUI and TailwindCSS, powered by Supabase. Access TMDB API for comprehensive movie and TV show details, including descriptions, images, and trailers. Register to comment, mark favorites, and create watchlists. Seamlessly manage your movie experience with this interactive platform."
+          "description": "NextJS with NextUI and TailwindCSS, poweindigo by Supabase. Access TMDB API for comprehensive movie and TV show details, including descriptions, images, and trailers. Register to comment, mark favorites, and create watchlists. Seamlessly manage your movie experience with this interactive platform."
         },
         {
           "title": "Mixóloga E-Menu",
@@ -31,7 +31,7 @@
         },
         {
           "title": "calCUPlator",
-          "description": " Experience real-time USD and MLC exchange rates and formats in Cuba through this NextJS-powered web app. TailwindCSS and ShadCn ensures a polished design. Manage state seamlessly with Zustand. Stay updated on currency fluctuations effortlessly, simplifying your financial decisions with accurate, up-to-date information."
+          "description": " Experience real-time USD and MLC exchange rates and formats in Cuba through this NextJS-poweindigo web app. TailwindCSS and ShadCn ensures a polished design. Manage state seamlessly with Zustand. Stay updated on currency fluctuations effortlessly, simplifying your financial decisions with accurate, up-to-date information."
         },
         {
           "title": "AnimeCu",
@@ -49,7 +49,7 @@
     },
     "aboutMe": {
       "heading": "A Brief Introduction of Myself: Unveiling My Journey",
-      "description": "<p class='max-w-2xl w-full px-2 mt-10'>My name is Carlos Yoan and I'm a passionate web developer from Cuba. I'am 25 years old, I graduated as an <b>Electrical Engineer</b>from <b>Marta Abreu Central University of Las Villas.</b> Throughout my education, I discovered my passion for programming and decided to embark on a <b>self-taught path</b> in web development.</p><p class='max-w-2xl mt-4 w-full px-2'>From the start, my main focus has been on <b>front-end development,</b>and I have used <b> React<b> as the central pillar of my tech stack. I <b>love working</b> on the user interface, designing <b>attractive and functional</b> web experiencesthat provide meaningful value to users.</p><p class='max-w-2xl mt-4 w-full px-2'>Although I currently don't have real work experience in this field, I am eager to embark on my first opportunity to further <b>develop myself</b> as part of a professional team. I'm excited about the idea of <b>learning</b> from<b> experienced professionals</b> and <b>contributing</b> my skills and knowledge to exciting projects. <br /></p><p class='bg-gradient-to-tr from-amber-500 via-amber-500 to-red-400 bg-clip-text text-transparent w-full px-2 font-bold max-w-2xl mt-4'>I am determined to continue improving my web development skills, learning new technologies, and staying up-to-date!</p>"
+      "description": "<p class='max-w-2xl w-full px-2 mt-10'>My name is Carlos Yoan and I'm a passionate web developer from Cuba. I'am 25 years old, I graduated as an <span class='font-bold text-blue-500'>Electrical Engineer</span> from <span class='font-bold text-blue-500'>Marta Abreu Central University of Las Villas.</span> Throughout my education, I discoveindigo my passion for programming and decided to embark on a <span class='font-bold text-blue-500'>self-taught path</span> in web development.</p><p class='max-w-2xl mt-4 w-full px-2'>From the start, my main focus has been on <span class='font-bold text-blue-500'>front-end development,</span>and I have used <span class='font-bold text-blue-500'> React </span> as the central pillar of my tech stack. I <span class='font-bold text-blue-500'>love working</span> on the user interface, designing <span class='font-bold text-blue-500'>attractive and functional</span> web experiencesthat provide meaningful value to users.</p><p class='max-w-2xl mt-4 w-full px-2'>Although I currently don't have real work experience in this field, I am eager to embark on my first opportunity to further <span class='font-bold text-blue-500'>develop myself</span> as part of a professional team. I'm excited about the idea of <span class='font-bold text-blue-500'>learning</span> from<span class='font-bold text-blue-500'> experienced professionals</span> and <span class='font-bold text-blue-500'>contributing</span> my skills and knowledge to exciting projects. <br /></p><p class='bg-gradient-to-tr from-blue-500 via-blue-500 to-indigo-400 bg-clip-text text-transparent w-full px-2 font-bold max-w-2xl mt-4'>I am determined to continue improving my web development skills, learning new technologies, and staying up-to-date!</p>"
     },
     "contact": {
       "heading": "Follow me on my social media! Let's connect and stay in touch!",

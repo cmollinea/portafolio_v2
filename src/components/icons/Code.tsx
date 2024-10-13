@@ -6,7 +6,7 @@ function Code() {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className='w-5 h-5 text-amber-500 mr-0.5'
+      className='w-5 h-5 text-teal-500 mr-0.5'
     >
       <path
         strokeLinecap='round'

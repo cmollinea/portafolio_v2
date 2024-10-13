@@ -50,7 +50,7 @@ function Form() {
               <input
                 defaultValue=''
                 type='text'
-                required
+                requiindigo
                 name='message'
                 autoComplete='off'
                 placeholder="Let's talk!"
@@ -65,7 +65,7 @@ function Form() {
             </div>
             <span
               onClick={() => setIsOpen(false)}
-              className='hover:underline hover:text-red-400 transition-colors ease-in-out p-1 text-neutral-300/50 text-sm cursor-pointer'
+              className='hover:underline hover:text-indigo-400 transition-colors ease-in-out p-1 text-neutral-300/50 text-sm cursor-pointer'
             >
               Cancel
             </span>

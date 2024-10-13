@@ -10,14 +10,14 @@ function Theme() {
         width='3.89189'
         height='1.8'
         rx='0.972973'
-        className='fill-neutral-500 group-hover:fill-amber-500 ease-in-out transition-colors'
+        className='fill-neutral-500 group-hover:fill-teal-500 ease-in-out transition-colors'
       ></rect>
       <rect
         x='6.08105'
         width='11.9189'
         height='1.8'
         rx='0.972973'
-        className='fill-neutral-500 group-hover:fill-amber-500 ease-in-out transition-colors'
+        className='fill-neutral-500 group-hover:fill-teal-500 ease-in-out transition-colors'
       ></rect>
       <rect
         x='1.70276'
@@ -25,7 +25,7 @@ function Theme() {
         width='8.02703'
         height='1.8'
         rx='0.972973'
-        className='fill-neutral-500 group-hover:fill-amber-500 ease-in-out transition-colors'
+        className='fill-neutral-500 group-hover:fill-teal-500 ease-in-out transition-colors'
       ></rect>
       <rect
         x='11.9189'
@@ -33,7 +33,7 @@ function Theme() {
         width='6.08108'
         height='1.8'
         rx='0.972973'
-        className='fill-neutral-500 group-hover:fill-amber-500 ease-in-out transition-colors'
+        className='fill-neutral-500 group-hover:fill-teal-500 ease-in-out transition-colors'
       ></rect>
       <rect
         x='3.89185'
@@ -41,7 +41,7 @@ function Theme() {
         width='3.64865'
         height='1.8'
         rx='0.972973'
-        className='fill-neutral-500 group-hover:fill-amber-500 ease-in-out transition-colors'
+        className='fill-neutral-500 group-hover:fill-teal-500 ease-in-out transition-colors'
       ></rect>
       <rect
         x='9.97296'
@@ -49,7 +49,7 @@ function Theme() {
         width='8.02703'
         height='1.8'
         rx='0.972973'
-        className='fill-neutral-500 group-hover:fill-amber-500 ease-in-out transition-colors'
+        className='fill-neutral-500 group-hover:fill-teal-500 ease-in-out transition-colors'
       ></rect>
       <rect
         x='1.94592'
@@ -57,7 +57,7 @@ function Theme() {
         width='10.2162'
         height='1.8'
         rx='0.972973'
-        className='fill-neutral-500 group-hover:fill-amber-500 ease-in-out transition-colors'
+        className='fill-neutral-500 group-hover:fill-teal-500 ease-in-out transition-colors'
       ></rect>
       <rect
         x='14.1081'
@@ -65,7 +65,7 @@ function Theme() {
         width='3.89189'
         height='1.8'
         rx='0.972973'
-        className='fill-neutral-500 group-hover:fill-amber-500 ease-in-out transition-colors'
+        className='fill-neutral-500 group-hover:fill-teal-500 ease-in-out transition-colors'
       ></rect>
       <rect
         x='11.9189'
@@ -73,14 +73,14 @@ function Theme() {
         width='6.08108'
         height='1.8'
         rx='0.972973'
-        className='fill-neutral-500 group-hover:fill-amber-500 ease-in-out transition-colors'
+        className='fill-neutral-500 group-hover:fill-teal-500 ease-in-out transition-colors'
       ></rect>
       <rect
         y='16.054'
         width='10.2162'
         height='1.8'
         rx='0.972973'
-        className='fill-neutral-500 group-hover:fill-amber-500 ease-in-out transition-colors'
+        className='fill-neutral-500 group-hover:fill-teal-500 ease-in-out transition-colors'
       ></rect>
     </svg>
   );

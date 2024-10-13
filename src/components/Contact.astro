@@ -1,25 +1,30 @@
 ---
 import SectionTitle from './SectionTitle.astro';
-import StyledSection from './StyledSection.astro';
 import SocialLinks from './React/SocialLinks';
 import Form from './React/Form';
-import content from '../content/content.json';
+import content from '../constants/content.json';
 ---
 
-<StyledSection>
-  <SectionTitle id='social'>
-    {content.en.contact.heading}
-  </SectionTitle>
-  <div class='grid gap-2 mt-10 w-full place-items-center mx-4 pb-10'>
-    <SocialLinks client:load />
+<section class='col-span-4 grid gap-2'>
+  <div class='h-full bento-container p-4 grid'>
+    <SectionTitle id='social'>
+      {content.en.contact.heading}
+    </SectionTitle>
+    <div
+      class='grid grid-rows-4 grid-cols-2 gap-1 w-full place-items-center mt-4'
+    >
+      <SocialLinks client:load />
+    </div>
   </div>
 
-  <p
-    id='direct_message'
-    class='bg-gradient-to-tr from-amber-500 via-amber-500 to-red-400 bg-clip-text text-transparent w-full font-bold max-w-2xl text-center mt-4'
-  >
-    {content.en.contact.message}
-  </p>
+  <div class='bento-container p-4 flex items-center flex-col'>
+    <p
+      id='direct_message'
+      class='bg-gradient-to-tr from-teal-500 via-teal-500 to-indigo-400 bg-clip-text text-transparent w-full text-center mt-4'
+    >
+      {content.en.contact.message}
+    </p>
 
-  <Form client:load />
-</StyledSection>
+    <Form client:load />
+  </div>
+</section>

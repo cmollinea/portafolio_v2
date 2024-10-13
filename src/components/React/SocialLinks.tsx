@@ -7,8 +7,8 @@ import Twitter from '../icons/Twitter';
 import ContactLink from './ContactLink';
 
 const socialNames = [
-  'LinkedIn',
   'GitHub',
+  'LinkedIn',
   'X/Twitter',
   'Telegram',
   'Discord'
@@ -16,8 +16,8 @@ const socialNames = [
 ];
 
 const socialIcons = [
-  <Linkedin />,
   <Github />,
+  <Linkedin />,
   <Twitter />,
   <Telegram />,
   <Discord />
@@ -25,8 +25,9 @@ const socialIcons = [
 ];
 
 const socialLinks = [
-  'https://cu.linkedin.com/in/carlos-yoan-mollinea-43206827b',
   'https://github.com/cmollinea/',
+
+  'https://cu.linkedin.com/in/carlos-yoan-mollinea-43206827b',
   'https://twitter.com/proc4stinator',
   'https://t.me/Mouse_Potat0',
   'https://discord.com/users/procastinatordev'
@@ -36,9 +37,19 @@ function SocialLinks() {
   return (
     <>
       {socialNames.map((name, index) => (
-        <ContactLink key={index} href={socialLinks[index]}>
+        <ContactLink
+          className={
+            socialLinks[index].includes('github')
+              ? 'col-span-2 row-span-2 flex-col'
+              : undefined
+          }
+          key={index}
+          href={socialLinks[index]}
+        >
           {socialIcons[index]}
-          {name}
+          <span className='max-[900px]:sr-only'>
+            {name === 'GitHub' ? '' : name}
+          </span>
         </ContactLink>
       ))}
     </>

@@ -22,13 +22,19 @@ export const stack = [
 
 function MotionStack() {
   return (
-    <div className='flex gap-2 mt-6'>
-      {stack.map((tech, index) => (
+    <div className='grid h-full grid-cols-6 p-4 gap-1 bento-container col-span-6 pt-10'>
+      <h1 className='font-black col-span-6 text-6xl md:text-3xl 2xl:text-5xl bg-gradient-to-tr from-neutral-200 to-neutral-600 mb-4 bg-clip-text text-transparen'>
+        Skills
+      </h1>
+      {stack.map((icon, index) => (
         <span
           key={index}
-          className='text-xs md:text-xl bg-neutral-300/10 backdrop-blur-sm border border-neutral-300/20 rounded-md p-1 md:p-2 flex items-center place-content-center'
+          className={`text-xs rounded-md md:text-xl bento-container backdrop-blur-sm p-2 h-full flex items-center place-content-center ${
+            (index === 4 || index === 5 || index === 6) &&
+            'col-span-2 row-span-2'
+          }`}
         >
-          {tech}
+          {icon}
         </span>
       ))}
     </div>

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { config } from '../../constants/motionVariant';
-import content from '../../content/content.json';
+import content from '../../constants/content.json';
 
 type Props = {
   openForm: React.Dispatch<React.SetStateAction<boolean>>;
@@ -15,16 +15,16 @@ function Message({ openForm }: Props) {
         scale: 0.99,
         transition: { duration: 0.05, ease: 'easeOut' }
       }}
-      className='border group border-neutral-200/20 transition-colors hover:border-transparent overflow-hidden max-w-md p-2 w-full h-16 flex items-center text-x; font-bold rounded-md relative mt-10'
+      className='border group place-content-center bento-container border-neutral-200/20 transition-colors hover:border-transparent overflow-hidden p-2 w-full h-16 flex items-center font-bold rounded-md relative mt-10'
     >
-      <span className='z-30 relative flex gap-2 text-neutral-500 group-hover:text-amber-500 transition-colors ease-in-out items-center'>
+      <span className='z-30 relative flex gap-2 text-neutral-500 group-hover:text-teal-500 transition-colors ease-in-out items-center'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
           viewBox='0 0 24 24'
           strokeWidth={1.5}
           stroke='currentColor'
-          className='w-8 h-8 text-neutral-500 group-hover:text-amber-500 transition-colors ease-out'
+          className='w-8 h-8 text-neutral-500 group-hover:text-teal-500 transition-colors ease-out'
         >
           <path
             strokeLinecap='round'

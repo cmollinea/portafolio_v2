@@ -6,7 +6,7 @@ function External() {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className='w-5 md:w-6 h-5 md:h-6 ml-1 text-amber-500'
+      className='w-5 md:w-6 h-5 md:h-8 ml-1 text-teal-500'
     >
       <path
         strokeLinecap='round'
