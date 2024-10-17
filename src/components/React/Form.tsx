@@ -4,6 +4,7 @@ import { Toaster, toast } from 'sonner';
 import Send from '../icons/Send';
 import Message from '../icons/Message';
 import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatedContainer } from './AnimatedContainer';
 
 function Form() {
   const formRef = useRef<null | HTMLFormElement>(null);
@@ -33,7 +34,7 @@ function Form() {
   };
 
   return (
-    <>
+    <AnimatedContainer delay={0.2 * 6} className='col-span-3 '>
       <Toaster position='top-center' richColors theme='dark' />
       <Message openForm={setIsOpen} />
       <AnimatePresence>
@@ -72,7 +73,7 @@ function Form() {
           </motion.form>
         ) : null}
       </AnimatePresence>
-    </>
+    </AnimatedContainer>
   );
 }
 export default Form;

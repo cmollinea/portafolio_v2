@@ -1,34 +1,37 @@
 ---
-
+import { AnimatedContainer } from './React/AnimatedContainer';
 ---
 
-<header
-  class='py-2 col-span-12 w-full flex items-center z-50 border rounded-xl border-neutral-500/20 px-4 bg-neutral-500/5 justify-between mx-auto box-border mt-10'
->
-  <div class='flex items-center relative'>
-    <div class='ring-1 ring-neutral-50/20 rounded-full overflow-hidden'>
-      <img src='/og.png' class='h-12 w-12 object-cover' />
-    </div>
+<AnimatedContainer client:load className='col-span-12 w-full'>
+  <header
+    class='py-2 flex items-center z-50 border rounded-xl border-neutral-500/20 px-4 bg-neutral-500/5 justify-between mx-auto box-border mt-10'
+  >
+    <div class='flex items-center relative'>
+      <div class='ring-1 ring-neutral-50/20 rounded-full overflow-hidden'>
+        <img src='/og.png' class='h-12 w-12 object-cover' />
+      </div>
 
-    <div
-      class='flex flex-col px-2 text-indigo font-medium absolute top-0 left-6'
-    >
       <div
-        class='flex items-center gap-0.5 bg-green-600/5 place-content-center rounded-xl ring-1 ring-inset ring-green-600/10 p-1'
+        class='flex flex-col px-2 text-indigo font-medium absolute top-0 left-6'
       >
-        <span
-          class='block h-3 w-3 rounded-full bg-green-600 after:block after:w-3 after:h-3 after:bg-green-600 after:animate-ping after:rounded-full'
-        ></span><span class='text-green-600 text-[0.7rem] sr-only'
-          >Available</span
+        <div
+          class='flex items-center gap-0.5 bg-green-600/5 place-content-center rounded-xl ring-1 ring-inset ring-green-600/10 p-1'
         >
+          <span
+            class='block h-3 w-3 rounded-full bg-green-600 after:block after:w-3 after:h-3 after:bg-green-600 after:animate-ping after:rounded-full'
+          ></span><span class='text-green-600 text-[0.7rem] sr-only'
+            >Available</span
+          >
+        </div>
       </div>
     </div>
-  </div>
-  <nav class='text-xs grid grid-cols-2 gap-2 max-md:px-1 px-6 font-semibold'>
-    <a href='#social' class='hover:underline
+    <nav class='text-xs grid grid-cols-2 gap-2 max-md:px-1 px-6 font-semibold'>
+      <a href='#social' class='hover:underline
    hover:text-sky-500'>Contact</a>
-    <a href='#about_me' class='hover:underline
-   hover:text-sky-500'>About Me</a
-    >
-  </nav>
-</header>
+      <a href='#about_me' class='hover:underline
+   hover:text-sky-500'
+        >About Me</a
+      >
+    </nav>
+  </header>
+</AnimatedContainer>

@@ -7,6 +7,7 @@ export const WorkMarquee = () => {
     <Marquee pauseOnHover className='w-full col-span-8'>
       {myProjects.map((project, index) => (
         <ProjectCard
+          key={project.title}
           className='ml-4'
           index={index % 2 === 0 ? 0 : 1}
           title={project.title}

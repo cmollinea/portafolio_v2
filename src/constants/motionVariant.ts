@@ -14,6 +14,5 @@ export const config = {
   initial: 'initial',
   whileInView: 'animate',
   transition: { duration: 1, ease: 'backInOut' },
-  viewport: { once: true }
+  viewport: { once: true, amount: 0.5 }
 };
-

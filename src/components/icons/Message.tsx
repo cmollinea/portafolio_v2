@@ -10,17 +10,12 @@ type Props = {
 
 function Message({ className, openForm }: Props) {
   return (
-    <motion.button
+    <button
       aria-label='Send Direct message'
-      {...config}
       onClick={() => openForm(true)}
-      whileTap={{
-        scale: 0.99,
-        transition: { duration: 0.05, ease: 'easeOut' }
-      }}
       className={cn(
         className,
-        'bento-container col-span-3  font-bold w-full h-full  group relative'
+        'bento-container  font-bold w-full h-full  group relative'
       )}
     >
       <span className='z-30 relative flex flex-col gap-2 text-neutral-500 group-hover:text-sky-500 transition-colors ease-in-out items-center text-xs'>
@@ -41,7 +36,7 @@ function Message({ className, openForm }: Props) {
         {content.en.contact.messageButtonLabel}
       </span>{' '}
       <span className='absolute inset-0 bg-gradient-to-tr opacity-0 group-hover:opacity-100 from-gray-200/20 to-transparent z-20 transition-opacity duration-200 ease-in-out backdrop-blur-[1px]'></span>
-    </motion.button>
+    </button>
   );
 }
 export default Message;

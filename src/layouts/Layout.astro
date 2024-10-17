@@ -1,10 +1,8 @@
 ---
 import Meta from '../components/Meta.astro';
 import OpenGraphFacebook from '../components/OpenGraphFacebook.astro';
+import { LoadingScreen } from '../components/React/LoadingScreen';
 import TwitterCard from '../components/TwitterCard.astro';
-import NavBar from '../components/NavBar.astro';
-import Footer from '../components/Footer.astro';
-import LoadingScreen from '../components/LoadingScreen.astro';
 
 interface Props {
   title: string;
@@ -25,19 +23,6 @@ const { title } = Astro.props;
       content='HhawtBpenGliesOLyFP46TlYilTGbHHQIcUnLtvQp4w'
     />
 
-    <!-- Scripts -->
-
-    <script>
-      function getReady() {
-        let body = document.getElementsByTagName('body');
-        body[0].classList.remove('hidden');
-        let loading_screen = document.getElementById('loading_screen');
-        loading_screen?.classList.add('hidden');
-      }
-
-      window.onload = () => getReady();
-    </script>
-
     <link rel='preconnect' href='https://fonts.googleapis.com' />
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
     <link
@@ -45,20 +30,25 @@ const { title } = Astro.props;
       rel='stylesheet'
     />
   </head>
-  <LoadingScreen />
-  <body class='hidden py-10 p-4'>
+  <LoadingScreen client:load />
+  <body>
     <slot />
   </body>
 </html>
 
 <style is:global>
   @tailwind base;
+  @tailwind utilities;
 
   html {
     font-family: 'Fira Sans', system-ui, sans-serif;
     background: #050505;
     background-size: 224px;
     color: rgb(204, 210, 213);
+  }
+
+  body {
+    overflow: hidden;
   }
 
   code {

@@ -3,16 +3,22 @@ import Heading from './Heading.astro';
 import ShortDescription from './ShortDescription.astro';
 import Stack from './React/Stack';
 import CtaButton from './CtaButton.astro';
+import { BentoContainer } from './React/BentoContainer';
+import { AnimatedContainer } from './React/AnimatedContainer';
 ---
 
 <div class='col-span-6 grid gap-2 h-full'>
-  <Heading />
-  <div class='bento-container w-full h-full p-4 col-span-6'>
-    <ShortDescription />
-    <CtaButton />
-  </div>
+  <AnimatedContainer client:load>
+    <Heading />
+  </AnimatedContainer>
+  <AnimatedContainer client:load>
+    <BentoContainer className=' w-full h-full p-4 col-span-6'>
+      <ShortDescription />
+      <CtaButton />
+    </BentoContainer>
+  </AnimatedContainer>
 </div>
 
 <div class='col-span-6'>
-  <Stack />
+  <Stack client:load />
 </div>

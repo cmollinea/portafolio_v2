@@ -3,17 +3,19 @@ import SectionTitle from './SectionTitle.astro';
 import SocialLinks from './React/SocialLinks';
 import Form from './React/Form';
 import content from '../constants/content.json';
+import { BentoContainer } from './React/BentoContainer';
+import { AnimatedContainer } from './React/AnimatedContainer';
 ---
 
-<div
-  class='h-full bento-container p-4 grid grid-cols-7 gap-2 col-span-12 lg:col-span-5'
->
-  <div class='col-span-7 mt-4'>
-    <SectionTitle id='social'>
-      {content.en.contact.heading}
-    </SectionTitle>
-  </div>
+<AnimatedContainer client:load className='col-span-12 lg:col-span-5'>
+  <BentoContainer className='grid grid-cols-7 gap-2 h-full'>
+    <div class='col-span-7 mt-4'>
+      <SectionTitle id='social'>
+        {content.en.contact.heading}
+      </SectionTitle>
+    </div>
 
-  <SocialLinks client:load />
-  <Form client:load />
-</div>
+    <SocialLinks client:load />
+    <Form client:load />
+  </BentoContainer>
+</AnimatedContainer>

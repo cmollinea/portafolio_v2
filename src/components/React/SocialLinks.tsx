@@ -1,10 +1,10 @@
 import Discord from '../icons/Discord';
 import Github from '../icons/Github';
 import Linkedin from '../icons/Linkedin';
-import Message from '../icons/Message';
 import Telegram from '../icons/Telegram';
 import Twitter from '../icons/Twitter';
-import ContactLink from './ContactLink';
+import { AnimatedContainer } from './AnimatedContainer';
+import { BentoContainer } from './BentoContainer';
 
 const social = [
   {
@@ -39,15 +39,24 @@ const social = [
 function SocialLinks() {
   return (
     <>
-      {social.map(({ name, element, link, className }) => (
-        <ContactLink
-          className={className ?? 'col-span-2'}
-          key={name}
+      {social.map(({ name, element, link, className }, index) => (
+        <a
+          target='_blank'
           href={link}
+          className={`group relative transition-colors ${
+            className ?? 'col-span-2'
+          }`}
         >
-          {element}
-          <span>{name}</span>
-        </ContactLink>
+          <AnimatedContainer className='w-full h-full' delay={index * 0.2}>
+            <BentoContainer className='border place-content-center  hover:border-transparent overflow-hidden w-full h-full p-4  flex items-center font-bold rounded-md  bento-container'>
+              <span className='z-30 relative flex flex-col text-xs gap-2 text-neutral-500 group-hover:text-sky-500 transition-colors ease-in-out items-center'>
+                {element}
+                <span>{name}</span>
+              </span>{' '}
+              <div className='absolute inset-0 bg-gradient-to-tr opacity-0 group-hover:opacity-100 from-gray-200/20 to-transparent z-20 transition-opacity duration-200 ease-in-out backdrop-blur-[1px]'></div>
+            </BentoContainer>
+          </AnimatedContainer>
+        </a>
       ))}
     </>
   );
