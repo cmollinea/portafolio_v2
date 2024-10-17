@@ -1,0 +1,13 @@
+---
+import content from '../constants/content.json';
+import SectionTitle from './SectionTitle.astro';
+---
+
+<div class='col-span-6 bento-container h-full'>
+  <SectionTitle>
+    {content.en.hero.heading}
+  </SectionTitle>
+  <small class='text-lg md:text-xl max-w-prose my-4'>
+    {content.en.hero.small}
+  </small>
+</div>

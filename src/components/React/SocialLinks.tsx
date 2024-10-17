@@ -6,50 +6,47 @@ import Telegram from '../icons/Telegram';
 import Twitter from '../icons/Twitter';
 import ContactLink from './ContactLink';
 
-const socialNames = [
-  'GitHub',
-  'LinkedIn',
-  'X/Twitter',
-  'Telegram',
-  'Discord'
-  // 'Send Direct Message'
-];
+const social = [
+  {
+    name: 'GitHub',
+    element: <Github />,
+    link: 'https://github.com/cmollinea/',
+    className: 'col-span-3'
+  },
+  {
+    name: 'LinkedIn',
+    element: <Linkedin className='w-14 h-14' />,
+    link: 'https://cu.linkedin.com/in/carlos-yoan-mollinea-43206827b'
+  },
+  {
+    name: 'Twitter',
+    element: <Twitter className='w-14 h-14' />,
+    link: 'https://twitter.com/proc4stinator'
+  },
+  {
+    name: 'Telegram',
+    element: <Telegram className='w-14 h-14' />,
 
-const socialIcons = [
-  <Github />,
-  <Linkedin />,
-  <Twitter />,
-  <Telegram />,
-  <Discord />
-  // <Message />
-];
-
-const socialLinks = [
-  'https://github.com/cmollinea/',
-
-  'https://cu.linkedin.com/in/carlos-yoan-mollinea-43206827b',
-  'https://twitter.com/proc4stinator',
-  'https://t.me/Mouse_Potat0',
-  'https://discord.com/users/procastinatordev'
+    link: 'https://t.me/Mouse_Potat0'
+  },
+  {
+    name: 'Discord',
+    element: <Discord className='w-14 h-14' />,
+    link: 'https://discord.com/users/procastinatordev'
+  }
 ];
 
 function SocialLinks() {
   return (
     <>
-      {socialNames.map((name, index) => (
+      {social.map(({ name, element, link, className }) => (
         <ContactLink
-          className={
-            socialLinks[index].includes('github')
-              ? 'col-span-2 row-span-2 flex-col'
-              : undefined
-          }
-          key={index}
-          href={socialLinks[index]}
+          className={className ?? 'col-span-2'}
+          key={name}
+          href={link}
         >
-          {socialIcons[index]}
-          <span className='max-[900px]:sr-only'>
-            {name === 'GitHub' ? '' : name}
-          </span>
+          {element}
+          <span>{name}</span>
         </ContactLink>
       ))}
     </>

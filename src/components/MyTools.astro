@@ -13,62 +13,98 @@ import content from '../constants/content.json';
   <a
     target='_blank'
     href='https://code.visualstudio.com'
-    class='flex flex-col min-[1000px]:gap-4 group place-content-center items-center bento-container p-4 rounded-md'
+    class='group bento-container relative p-4 rounded-md'
   >
-    <VisualStudioCode />
-    <p
-      class='text-neutral-500 group-hover:text-teal-500 transition-colors ease-in-out font-bold text-xs'
+    <div
+      class='flex flex-col min-[1000px]:gap-4 place-content-center items-center z-30 relative'
     >
-      <span class='max-[1000px]:sr-only'> VS Code </span>
-    </p>
+      <VisualStudioCode />
+      <p
+        class='text-neutral-500 group-hover:text-sky-500 transition-colors ease-in-out font-bold text-xs'
+      >
+        <span class='max-[1000px]:sr-only'> VS Code </span>
+      </p>
+    </div>
+
+    <span
+      class='absolute inset-0 bg-gradient-to-tr opacity-0 group-hover:opacity-100 from-gray-200/20 to-transparent z-20 transition-opacity duration-200 ease-in-out backdrop-blur-[1px]'
+    ></span>
   </a>
   <a
     target='_blank'
     href='https://ohmyposh.dev'
-    class='flex flex-col min-[1000px]:gap-4 group place-content-center items-center bento-container'
+    class='group bento-container relative p-4 rounded-md'
   >
-    <Terminal />
-    <p
-      class='text-neutral-500 group-hover:text-teal-500 transition-colors ease-in-out font-bold text-xs'
+    <div
+      class='flex flex-col min-[1000px]:gap-4 place-content-center items-center z-30 relative'
     >
-      <span class='max-[1000px]:sr-only'> Oh My Posh</span>
-    </p>
+      <Terminal />
+      <p
+        class='text-neutral-500 group-hover:text-sky-500 transition-colors ease-in-out font-bold text-xs'
+      >
+        <span class='max-[1000px]:sr-only'> Oh My Posh</span>
+      </p>
+    </div>
+    <span
+      class='absolute inset-0 bg-gradient-to-tr opacity-0 group-hover:opacity-100 from-gray-200/20 to-transparent z-20 transition-opacity duration-200 ease-in-out backdrop-blur-[1px]'
+    ></span>
   </a>
   <a
     target='_blank'
     href='https://www.opera.com/es/gx'
-    class='flex flex-col min-[1000px]:gap-4 group place-content-center items-center bento-container'
+    class='group bento-container relative p-4 rounded-md'
   >
-    <OperaGX />
-    <p
-      class='text-neutral-500 group-hover:text-teal-500 transition-colors ease-in-out font-bold text-xs'
+    <div
+      class='flex flex-col min-[1000px]:gap-4 place-content-center items-center z-30 relative'
     >
-      <span class='max-[1000px]:sr-only'> OperaGX</span>
-    </p>
+      <OperaGX />
+      <p
+        class='text-neutral-500 group-hover:text-sky-500 transition-colors ease-in-out font-bold text-xs'
+      >
+        <span class='max-[1000px]:sr-only'> OperaGX</span>
+      </p>
+    </div>
+    <span
+      class='absolute inset-0 bg-gradient-to-tr opacity-0 group-hover:opacity-100 from-gray-200/20 to-transparent z-20 transition-opacity duration-200 ease-in-out backdrop-blur-[1px]'
+    ></span>
   </a>
 
   <a
     target='_blank'
     href='https://fonts.google.com'
-    class='flex flex-col min-[1000px]:gap-4 group place-content-center items-center bento-container'
+    class='group bento-container relative p-4 rounded-md'
   >
-    <GoogleFont />
-    <p
-      class='text-neutral-500 group-hover:text-teal-500 transition-colors ease-in-out font-bold text-xs'
+    <div
+      class='flex flex-col min-[1000px]:gap-4 place-content-center items-center z-30 relative'
     >
-      <span class='max-[1000px]:sr-only'> Fira Code</span>
-    </p>
+      <GoogleFont />
+      <p
+        class='text-neutral-500 group-hover:text-sky-500 transition-colors ease-in-out font-bold text-xs'
+      >
+        <span class='max-[1000px]:sr-only'> Fira Code</span>
+      </p>
+    </div>
+    <span
+      class='absolute inset-0 bg-gradient-to-tr opacity-0 group-hover:opacity-100 from-gray-200/20 to-transparent z-20 transition-opacity duration-200 ease-in-out backdrop-blur-[1px]'
+    ></span>
   </a>
   <a
     target='_blank'
     href='https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme'
-    class='flex flex-col min-[1000px]:gap-4 group place-content-center items-center bento-container'
+    class='group bento-container relative p-4 rounded-md'
   >
-    <Theme />
-    <p
-      class='text-neutral-500 group-hover:text-teal-500 transition-colors ease-in-out font-bold text-xs'
+    <div
+      class='flex flex-col min-[1000px]:gap-4 place-content-center items-center z-30 relative'
     >
-      <span class='max-[1000px]:sr-only'> One Dark Pro</span>
-    </p>
+      <Theme />
+      <p
+        class='text-neutral-500 group-hover:text-sky-500 transition-colors ease-in-out font-bold text-xs'
+      >
+        <span class='max-[1000px]:sr-only'> One Dark Pro</span>
+      </p>
+    </div>
+    <span
+      class='absolute inset-0 bg-gradient-to-tr opacity-0 group-hover:opacity-100 from-gray-200/20 to-transparent z-20 transition-opacity duration-200 ease-in-out backdrop-blur-[1px]'
+    ></span>
   </a>
 </div>

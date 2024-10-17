@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { config } from '../../constants/motionProject';
 import Code from '../icons/Code';
 import External from '../icons/External';
-import { stack } from './Stack';
+import { stack } from '../../constants';
 import type { ImageMetadata } from 'astro';
 
 type Props = {
@@ -32,16 +32,16 @@ function ProjectCard({
 }: Props) {
   return (
     <button
-      className={`shadow-lg shadow-neutral-200/5 backdrop-blur-sm  rounded-lg group relative overflow-hidden ${
+      className={`shadow-lg  shadow-neutral-200/5 backdrop-blur-sm  rounded-lg group relative overflow-hidden ${
         className && className
       }`}
     >
-      <div className='relative overflow-hidden'>
+      <div className='relative h-64 overflow-hidden'>
         <img
           src={image.src}
-          width={image.width}
-          height={image.height}
-          className='relative rounded-t-lg object-cover grayscale group-hover:grayscale-0 transition-all ease-in-out'
+          // width={image.width}
+          // height={image.height}
+          className='relative rounded-t-lg h-full w-full grayscale group-hover:grayscale-0 transition-all ease-in-out'
         />
       </div>
 
@@ -55,7 +55,7 @@ function ProjectCard({
           href={link.live}
           rel='noopener nofollow'
           target='_blank'
-          className='text-2xl md:text-4xl font-bold text-teal-500 flex items-center py-0.5 hover:underline'
+          className='text-2xl md:text-4xl font-bold text-sky-500 flex items-center py-0.5 hover:underline'
         >
           {title} <External />
         </a>
@@ -72,7 +72,7 @@ function ProjectCard({
         <p className='text-sm md:text-base pt-2'>{children}</p>
         <a
           href={link.github}
-          className='text-lg font-bold text-teal-500 hover:underline flex items-center mt-2'
+          className='text-lg font-bold text-sky-500 hover:underline flex items-center mt-2'
         >
           <Code />
           Code

@@ -1,4 +1,10 @@
-function Code() {
+import { cn } from '../../lib/utils';
+
+type Props = {
+  className?: string;
+};
+
+function Code({ className }: Props) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -6,7 +12,7 @@ function Code() {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className='w-5 h-5 text-teal-500 mr-0.5'
+      className={cn(className, 'w-5 h-5 text-sky-500 mr-0.5')}
     >
       <path
         strokeLinecap='round'

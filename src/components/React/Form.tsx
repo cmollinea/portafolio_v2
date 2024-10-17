@@ -44,13 +44,13 @@ function Form() {
             ref={formRef}
             exit={{ bottom: -150 }}
             onSubmit={(e) => sendEmail(e)}
-            className='fixed z-30 max-md:max-w-xs w-full max-w-md p-6 bg-gradient-to-tr group-hover:opacity-100 from-[#050505] backdrop-blur-md to-gray-900/20  flex flex-col place-content-center h-32  rounded-lg items-center gap-2 mt-10 border border-neutral-300/50'
+            className='fixed z-30 w-full max-w-md p-6 bg-gradient-to-tr group-hover:opacity-100 from-[#050505] backdrop-blur-md to-gray-900/20  flex flex-col place-content-center rounded-lg items-center gap-2 border border-neutral-300/50'
           >
             <div className='max-w-xs md:max-w-md w-full flex gap-2 relative'>
               <input
                 defaultValue=''
                 type='text'
-                requiindigo
+                required
                 name='message'
                 autoComplete='off'
                 placeholder="Let's talk!"

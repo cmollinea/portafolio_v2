@@ -2,18 +2,19 @@
 import SectionTitle from './SectionTitle.astro';
 import content from '../constants/content.json';
 import MyTools from './MyTools.astro';
+import { BentoContainer } from './React/BentoContainer';
 ---
 
-<div class='col-span-8 flex flex-col gap-2 h-fit'>
-  <div class='bento-container flex w-full flex-col items-center p-4'>
+<div class='col-span-12 lg:col-span-7 flex flex-col gap-2 h-fit'>
+  <BentoContainer className='flex w-full flex-col p-4'>
     <SectionTitle id='about_me'>
       {content.en.aboutMe.heading}
     </SectionTitle>
     <article
-      class='grid place-content-center'
+      class='grid'
       set:html={content.en.aboutMe.description}
-    />
-  </div>
+    /></BentoContainer
+  >
 
   <MyTools />
 </div>

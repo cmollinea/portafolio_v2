@@ -1,3 +1,13 @@
-<section class='flex flex-col p-4 bento-container col-span-12'>
+---
+import { cn } from '../lib/utils';
+
+type Props = {
+  className?: string;
+};
+
+const { className } = Astro.props;
+---
+
+<section class={cn('flex flex-col p-4 bento-container col-span-7', className)}>
   <slot />
 </section>

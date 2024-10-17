@@ -1,30 +1,36 @@
 import { motion } from 'framer-motion';
 import { config } from '../../constants/motionVariant';
 import content from '../../constants/content.json';
+import { cn } from '../../lib/utils';
 
 type Props = {
   openForm: React.Dispatch<React.SetStateAction<boolean>>;
+  className?: string;
 };
 
-function Message({ openForm }: Props) {
+function Message({ className, openForm }: Props) {
   return (
     <motion.button
+      aria-label='Send Direct message'
       {...config}
       onClick={() => openForm(true)}
       whileTap={{
         scale: 0.99,
         transition: { duration: 0.05, ease: 'easeOut' }
       }}
-      className='border group place-content-center bento-container border-neutral-200/20 transition-colors hover:border-transparent overflow-hidden p-2 w-full h-16 flex items-center font-bold rounded-md relative mt-10'
+      className={cn(
+        className,
+        'bento-container col-span-3  font-bold w-full h-full  group relative'
+      )}
     >
-      <span className='z-30 relative flex gap-2 text-neutral-500 group-hover:text-teal-500 transition-colors ease-in-out items-center'>
+      <span className='z-30 relative flex flex-col gap-2 text-neutral-500 group-hover:text-sky-500 transition-colors ease-in-out items-center text-xs'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
           viewBox='0 0 24 24'
           strokeWidth={1.5}
           stroke='currentColor'
-          className='w-8 h-8 text-neutral-500 group-hover:text-teal-500 transition-colors ease-out'
+          className='w-20 h-20 text-neutral-500 group-hover:text-sky-500 transition-colors ease-out'
         >
           <path
             strokeLinecap='round'

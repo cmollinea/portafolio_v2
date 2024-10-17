@@ -1,19 +1,18 @@
 ---
-import Heading from './React/Heading';
+import Heading from './Heading.astro';
 import ShortDescription from './ShortDescription.astro';
 import Stack from './React/Stack';
-import CtaButton from './React/CtaButton';
-import ArrowRight from './icons/ArrowRight';
-import MotionArrow from './React/Arrow';
-import { MotionHero } from './React/MotionHero';
+import CtaButton from './CtaButton.astro';
 ---
 
-<div class='col-span-6 grid grid-cols-6 gap-2 h-fit'>
+<div class='col-span-6 grid gap-2 h-full'>
   <Heading />
-  <div class='col-span-6 bento-container h-fit p-4'>
+  <div class='bento-container w-full h-full p-4 col-span-6'>
     <ShortDescription />
-
     <CtaButton />
   </div>
 </div>
-<div class='col-span-6 grid grid-cols-6 gap-2'><Stack /></div>
+
+<div class='col-span-6'>
+  <Stack />
+</div>

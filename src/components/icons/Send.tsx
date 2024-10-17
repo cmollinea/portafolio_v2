@@ -1,4 +1,10 @@
-function Send() {
+import { cn } from '../../lib/utils';
+
+type Props = {
+  className?: string;
+};
+
+function Send({ className }: Props) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -6,7 +12,10 @@ function Send() {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className='w-6 h-8 text-neutral-500 hover:text-neutral-300 active:scale-95 transition-all peer-focus:text-neutral-500 ease-in-out'
+      className={cn(
+        className,
+        'w-6 h-8 text-neutral-500 hover:text-neutral-300 active:scale-95 transition-all peer-focus:text-neutral-500 ease-in-out'
+      )}
     >
       <path
         strokeLinecap='round'

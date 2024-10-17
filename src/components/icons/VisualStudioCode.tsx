@@ -1,9 +1,18 @@
-function VisualStudioCode() {
+import { cn } from '../../lib/utils';
+
+type Props = {
+  className?: string;
+};
+
+function VisualStudioCode({ className }: Props) {
   return (
     <svg
       role='img'
       viewBox='0 0 24 24'
-      className='h-16 fill-neutral-500 group-hover:fill-teal-500 ease-in-out transition-colors'
+      className={cn(
+        className,
+        'h-10 md:h-16 fill-neutral-500 group-hover:fill-sky-500 ease-in-out transition-colors'
+      )}
       xmlns='http://www.w3.org/2000/svg'
     >
       <title>Visual Studio Code</title>

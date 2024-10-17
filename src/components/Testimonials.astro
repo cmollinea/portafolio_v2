@@ -1,0 +1,14 @@
+---
+import TestimonialMarquee from './React/TestimonialMarquee';
+import SectionTitle from './SectionTitle.astro';
+import StyledSection from './StyledSection.astro';
+---
+
+<StyledSection className='col-span-12  overflow-hidden'>
+  <SectionTitle>Testimonials</SectionTitle>
+  <div
+    class='mt-6 grid relative grid-cols-8 gap-6 justify-items-center h-[18rem]'
+  >
+    <TestimonialMarquee client:only='react' />
+  </div>
+</StyledSection>
