@@ -12,7 +12,7 @@ function Terminal({ className }: Props) {
       xmlns='http://www.w3.org/2000/svg'
       className={cn(
         className,
-        'h-10 md:h-16 fill-neutral-500 group-hover:fill-sky-500 ease-in-out transition-colors'
+        'h-10 md:h-16 fill-foreground group-hover:fill-primary ease-in-out transition-colors'
       )}
     >
       <title>Windows Terminal</title>

@@ -3,41 +3,43 @@ import SectionTitle from './SectionTitle.astro';
 ---
 
 <div
-  class='col-span-12 mt-20 bg-amber-500/5 border-l-4 text-amber-500 border-l-amber-500 p-6 flex gap-2'
+  class='col-span-12 mt-20 dark:bg-amber-500/10 border-l-4 text-amber-500 border-l-amber-500 p-6 flex gap-2'
 >
-  <span class='block h-8 w-8 shrink-0'>
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='30'
-      height='30'
-      class='h-full w-full'
-      viewBox='0 0 24 24'
-      fill='currentColor'
-    >
-      <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
-      <path
-        d='M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm.01 13l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -8a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z'
-      ></path>
-    </svg>
-  </span>
   <div>
-    <SectionTitle
-      className='text-lg 2xl:text-2xl md:text-2xl from-amber-500 uppercase to-amber-500'
-      >Site under reparation</SectionTitle
-    >
+    <div class='flex items-center space-x-2'>
+      <span class='block h-8 w-8 shrink-0'>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='30'
+          height='30'
+          class='h-full w-full'
+          viewBox='0 0 24 24'
+          fill='currentColor'
+        >
+          <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+          <path
+            d='M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm.01 13l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -8a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z'
+          ></path>
+        </svg>
+      </span>
+      <SectionTitle
+        className='text-lg 2xl:text-2xl md:text-2xl from-amber-500 uppercase to-amber-500'
+        >Site under reparation</SectionTitle
+      >
+    </div>
     <p class='font-medium leading-relaxed mt-2 max-md:text-sm'>
       First of all, thank you for checking out my portfolio! 😄😄😄 <br /> After
       creating
       <a class='underline' href='http://kilahui.vercel.app'>KilahUI</a> and just
-      days after my first experience as a developer in a real team, I've decided
+      days before my first experience as a developer in a real team, I've decided
       to give my portfolio a makeover, which I had been neglecting a bit. I've opted
-      for the bento style, especially because I really love Japan and Japanese culture
-      in general. 😁 I'm also trying to change my image, so I won't be calling myself
-      "procrastinator" anymore. I want to change it because it originally comes from
-      the word "procrastination," and I don't think I qualify as a procrastinator
+      for the bento 🍱 style, especially because I really love Japan 🇯🇵 and Japanese
+      culture in general. 😁 I'm also trying to change my image, so I won't be calling
+      myself "procrastinator" 🦥 anymore. I want to change it because it originally
+      comes from the word "procrastination," and I don't think I qualify as a procrastinator
       at all. So starting November 1st, I'll be calling myself "cymple" as my developer
-      nickname—a play on my initials C Y M P to make it sound more professional.
-      No more procrastinatordev (soon to be cympledev).
+      👨‍💻 nickname—a play on my initials C Y M P to make it sound more professional.
+      No more procrastinatordev (soon to be cympledev).🚀
     </p>
   </div>
 </div>

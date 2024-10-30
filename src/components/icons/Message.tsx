@@ -18,14 +18,14 @@ function Message({ className, openForm }: Props) {
         'bento-container  font-bold w-full h-full  group relative'
       )}
     >
-      <span className='z-30 relative flex flex-col gap-2 text-neutral-500 group-hover:text-sky-500 transition-colors ease-in-out items-center text-xs'>
+      <span className='z-30 relative flex flex-col gap-2 text-foreground group-hover:text-primary transition-colors ease-in-out items-center text-xs'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
           viewBox='0 0 24 24'
           strokeWidth={1.5}
           stroke='currentColor'
-          className='w-20 h-20 text-neutral-500 group-hover:text-sky-500 transition-colors ease-out'
+          className='w-20 h-20  group-hover:text-primary transition-colors ease-out'
         >
           <path
             strokeLinecap='round'

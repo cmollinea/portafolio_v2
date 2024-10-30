@@ -1,8 +1,14 @@
 import { BentoContainer } from './BentoContainer';
 
-const TestimonialCard = () => {
+type Props = {
+  name: string;
+  ocupation: string;
+  content: string;
+};
+
+const TestimonialCard = ({ name, ocupation, content }: Props) => {
   return (
-    <BentoContainer className='flex flex-none w-[23.5rem] flex-col z-20 bento-container overflow-hidden text-neutral-100 rounded-xl text-sm ml-2'>
+    <BentoContainer className='flex flex-none w-[23.5rem] flex-col z-20 bento-container overflow-hidden  rounded-xl text-sm ml-2'>
       <div className='flex items-center gap-2'>
         <div>
           <img
@@ -16,17 +22,12 @@ const TestimonialCard = () => {
           />
         </div>
         <div>
-          <h6 className='text-lg'>John Smith</h6>
-          <span className='font-light'>Engineer at BuildTech</span>
+          <h6 className='text-lg'>{name}</h6>
+          <span className='font-light'>{ocupation}</span>
         </div>
       </div>
       <div className='mt-4'>
-        <blockquote className='leading-relaxed'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-          impedit tempora voluptatibus autem ut voluptatum ullam minus
-          cupiditate dolorem voluptates excepturi totam, vel officia veniam
-          reiciendis accusamus, iure repellendus iste. explicabo?
-        </blockquote>
+        <blockquote className='leading-relaxed'>{content}</blockquote>
       </div>
     </BentoContainer>
   );

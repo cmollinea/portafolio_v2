@@ -6,9 +6,9 @@ function MotionStack() {
   return (
     <AnimatedContainer
       key={'Skills Container'}
-      className='grid h-full grid-cols-2 sm:grid-cols-5 lg:grid-cols-6 p-4 gap-1 bento-container col-span-6 pt-10'
+      className='grid h-full bg-card border-border grid-cols-2 sm:grid-cols-5 lg:grid-cols-6 p-4 gap-1 bento-container col-span-6 pt-10'
     >
-      <h1 className='font-black col-span-2 sm:col-span-5 lg:col-span-6 text-2xl w-full md:text-3xl 2xl:text-4xl bg-gradient-to-tr from-neutral-200 to-neutral-600 bg-clip-text text-transparent'>
+      <h1 className='font-black col-span-2 sm:col-span-5 lg:col-span-6 text-2xl w-full md:text-3xl 2xl:text-4xl bg-gradient-to-tr from-foreground to-neutral-600 bg-clip-text text-transparent '>
         Skills
       </h1>
       {stack.map((tech, index) => (

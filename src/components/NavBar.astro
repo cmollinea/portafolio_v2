@@ -1,10 +1,11 @@
 ---
 import { AnimatedContainer } from './React/AnimatedContainer';
+import { ThemeButton } from './React/ThemeButton';
 ---
 
 <AnimatedContainer client:load className='col-span-12 w-full'>
   <header
-    class='py-2 flex items-center z-50 border rounded-xl border-neutral-500/20 px-4 bg-neutral-500/5 justify-between mx-auto box-border mt-10'
+    class='py-2 flex items-center z-50 border rounded-xl border-border bg-card px-6 justify-between mx-auto box-border mt-10'
   >
     <div class='flex items-center relative'>
       <div class='ring-1 ring-neutral-50/20 rounded-full overflow-hidden'>
@@ -25,13 +26,8 @@ import { AnimatedContainer } from './React/AnimatedContainer';
         </div>
       </div>
     </div>
-    <nav class='text-xs grid grid-cols-2 gap-2 max-md:px-1 px-6 font-semibold'>
-      <a href='#social' class='hover:underline
-   hover:text-sky-500'>Contact</a>
-      <a href='#about_me' class='hover:underline
-   hover:text-sky-500'
-        >About Me</a
-      >
-    </nav>
+    <div>
+      <ThemeButton client:load />
+    </div>
   </header>
 </AnimatedContainer>

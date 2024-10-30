@@ -12,7 +12,7 @@ function Github({ className }: Props) {
       xmlns='http://www.w3.org/2000/svg'
       className={cn(
         className,
-        'fill-neutral-500 h-20 group-hover:fill-sky-500 transition-colors ease-in-out'
+        'fill-foreground h-20 group-hover:fill-primary transition-colors ease-in-out'
       )}
     >
       <title>GitHub</title>

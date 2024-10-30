@@ -11,7 +11,7 @@ function Discord({ className }: Props) {
       viewBox='0 0 24 24'
       xmlns='http://www.w3.org/2000/svg'
       className={cn(
-        'fill-neutral-500 h-8 group-hover:fill-sky-500 transition-colors ease-in-out',
+        'fill-foreground h-8 group-hover:fill-primary transition-colors ease-in-out',
         className
       )}
     >

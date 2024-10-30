@@ -12,7 +12,7 @@ function OperaGX({ className }: Props) {
       xmlns='http://www.w3.org/2000/svg'
       className={cn(
         className,
-        'md:h-16 h-10 fill-neutral-500 group-hover:fill-sky-500 ease-in-out transition-colors'
+        'md:h-16 h-10 fill-foreground group-hover:fill-primary ease-in-out transition-colors'
       )}
     >
       <title>Opera GX</title>

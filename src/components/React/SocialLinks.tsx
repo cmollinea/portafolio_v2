@@ -41,6 +41,7 @@ function SocialLinks() {
     <>
       {social.map(({ name, element, link, className }, index) => (
         <a
+          key={link}
           target='_blank'
           href={link}
           className={`group relative transition-colors ${
@@ -49,7 +50,7 @@ function SocialLinks() {
         >
           <AnimatedContainer className='w-full h-full' delay={index * 0.2}>
             <BentoContainer className='border place-content-center  hover:border-transparent overflow-hidden w-full h-full p-4  flex items-center font-bold rounded-md  bento-container'>
-              <span className='z-30 relative flex flex-col text-xs gap-2 text-neutral-500 group-hover:text-sky-500 transition-colors ease-in-out items-center'>
+              <span className='z-30 relative flex flex-col text-xs gap-2 text-neutral-500 group-hover:text-primary transition-colors ease-in-out items-center'>
                 {element}
                 <span>{name}</span>
               </span>{' '}

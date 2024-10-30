@@ -12,7 +12,7 @@ function External({ className }: Props) {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className={cn(className, 'w-5 md:w-6 h-5 md:h-8 ml-1 text-sky-500')}
+      className={cn(className, 'w-5 md:w-6 h-5 md:h-8 ml-1 text-primary')}
     >
       <path
         strokeLinecap='round'

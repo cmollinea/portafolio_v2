@@ -12,7 +12,7 @@ function Code({ className }: Props) {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className={cn(className, 'w-5 h-5 text-sky-500 mr-0.5')}
+      className={cn(className, 'w-5 h-5 text-primary mr-0.5')}
     >
       <path
         strokeLinecap='round'
