@@ -45,43 +45,10 @@ const shared = [
     className: 'col-span-4 row-span-2'
   },
   {
-    live: 'https://cuban-bazar.vercel.app',
-    github: 'https://github.com/cmollinea/bazar-online',
-    image: bazar,
-    stackIndex: [6, 5, 3]
-  },
-  {
-    live: 'https://cuban-electric-bill.vercel.app',
-    github: 'https://github.com/cmollinea/cuban-electric-bill',
-    image: bill,
-    stackIndex: [4, 5, 2]
-  },
-  {
     live: 'https://samullanes.com/',
     github: 'https://github.com/cmollinea/samu-llanes-portafolio',
     image: samu,
     stackIndex: [7, 4, 5, 3],
-    className: 'col-span-4 row-span-2'
-  },
-
-  {
-    live: 'https://countinkly.vercel.app/SRp5b7-Kk0?source=Portfolio',
-    github: 'https://github.com/cmollinea/mixologa-menu',
-    image: mixologa,
-    stackIndex: [7, 5, 3]
-  },
-  {
-    live: 'https://countinkly.vercel.app/ugJ2TNsjWF?source=Portfolio',
-    github: 'https://github.com/cmollinea/calcuplator',
-    image: calcuplador,
-    stackIndex: [6, 5, 3]
-  },
-
-  {
-    live: 'https://countinkly.vercel.app/V5NsLjSq27?source=Portfolio',
-    github: 'https://github.com/cmollinea/movie-paradise',
-    image: movieParadise,
-    stackIndex: [6, 5, 3],
     className: 'col-span-4 row-span-2'
   },
 
@@ -93,10 +60,45 @@ const shared = [
   },
 
   {
+    live: 'https://countinkly.vercel.app/V5NsLjSq27?source=Portfolio',
+    github: 'https://github.com/cmollinea/movie-paradise',
+    image: movieParadise,
+    stackIndex: [6, 5, 3],
+    className: 'col-span-4 row-span-2'
+  },
+
+  {
+    live: 'https://countinkly.vercel.app/SRp5b7-Kk0?source=Portfolio',
+    github: 'https://github.com/cmollinea/mixologa-menu',
+    image: mixologa,
+    stackIndex: [7, 5, 3]
+  },
+
+  {
+    live: 'https://countinkly.vercel.app/ugJ2TNsjWF?source=Portfolio',
+    github: 'https://github.com/cmollinea/calcuplator',
+    image: calcuplador,
+    stackIndex: [6, 5, 3]
+  },
+
+  {
     live: 'https://animecu.netlify.app/',
     github: 'https://github.com/cmollinea/AnimeCu',
     image: animecu,
     stackIndex: [6, 5, 3]
+  },
+
+  {
+    live: 'https://cuban-bazar.vercel.app',
+    github: 'https://github.com/cmollinea/bazar-online',
+    image: bazar,
+    stackIndex: [6, 5, 3]
+  },
+  {
+    live: 'https://cuban-electric-bill.vercel.app',
+    github: 'https://github.com/cmollinea/cuban-electric-bill',
+    image: bill,
+    stackIndex: [4, 5, 2]
   }
 ];
 

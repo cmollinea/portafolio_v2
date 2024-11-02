@@ -49,7 +49,7 @@ function SocialLinks() {
           }`}
         >
           <AnimatedContainer className='w-full h-full' delay={index * 0.2}>
-            <BentoContainer className='border place-content-center  hover:border-transparent overflow-hidden w-full h-full p-4  flex items-center font-bold rounded-md  bento-container'>
+            <BentoContainer className='border place-content-center  relative w-full h-full p-4 overflow-hidden flex items-center font-bold rounded-md  bento-container'>
               <span className='z-30 relative flex flex-col text-xs gap-2 text-neutral-500 group-hover:text-primary transition-colors ease-in-out items-center'>
                 {element}
                 <span>{name}</span>

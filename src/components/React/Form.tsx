@@ -1,15 +1,21 @@
-import { type SyntheticEvent, useRef, useState } from 'react';
+import { type SyntheticEvent, useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from 'sonner';
 import Send from '../icons/Send';
 import Message from '../icons/Message';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AnimatedContainer } from './AnimatedContainer';
+import { createPortal } from 'react-dom';
 
 function Form() {
   const formRef = useRef<null | HTMLFormElement>(null);
   const [isOpen, setIsOpen] = useState(false);
   const [isSending, setIsSending] = useState(false);
+  const [body, setBody] = useState<null | HTMLElement>(null);
+
+  useEffect(() => {
+    setBody(document.body);
+  }, []);
 
   const sendEmail = (e: SyntheticEvent) => {
     e.preventDefault();
@@ -37,42 +43,64 @@ function Form() {
     <AnimatedContainer delay={0.2 * 6} className='col-span-3 '>
       <Toaster position='top-center' richColors theme='dark' />
       <Message openForm={setIsOpen} />
-      <AnimatePresence>
-        {isOpen ? (
-          <motion.form
-            initial={{ bottom: -150 }}
-            animate={{ bottom: 10 }}
-            ref={formRef}
-            exit={{ bottom: -150 }}
-            onSubmit={(e) => sendEmail(e)}
-            className='fixed z-30 w-full max-w-md p-6 bg-gradient-to-tr group-hover:opacity-100 from-[#050505] backdrop-blur-md to-gray-900/20  flex flex-col place-content-center rounded-lg items-center gap-2 border border-neutral-300/50'
-          >
-            <div className='max-w-xs md:max-w-md w-full flex gap-2 relative'>
-              <input
-                defaultValue=''
-                type='text'
-                required
-                name='message'
-                autoComplete='off'
-                placeholder="Let's talk!"
-                className='outline-none border-b border-neutral-300/50 bg-transparent h-10 w-full px-4 focus:border-neutral-300 transition-colors ease-in-out text-sm font-normal text-inherit placeholder:text-neutral-300/50 peer'
-              />
-              <button
-                type='submit'
-                className='rounded-lg h-10 p-1 w-16 flex items-center place-content-center transition-colors ease-in-out group absolute right-0'
+      {body &&
+        createPortal(
+          <AnimatePresence>
+            {isOpen ? (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0, transition: { delay: 0.15 } }}
+                key={'form-overlay'}
+                className='fixed p-10  flex place-content-center items-center inset-0 z-50 backdrop-blur-xl'
               >
-                <Send />
-              </button>
-            </div>
-            <span
-              onClick={() => setIsOpen(false)}
-              className='hover:underline hover:text-indigo-400 transition-colors ease-in-out p-1 text-neutral-300/50 text-sm cursor-pointer'
-            >
-              Cancel
-            </span>
-          </motion.form>
-        ) : null}
-      </AnimatePresence>
+                <motion.form
+                  initial={{ opacity: 0, translateY: 50 }}
+                  animate={{ opacity: 1, translateY: 0 }}
+                  exit={{
+                    opacity: 0,
+                    translateY: 50,
+                    transition: { delay: 0, duration: 0.1 }
+                  }}
+                  transition={{ ease: 'backInOut', delay: 0.1 }}
+                  ref={formRef}
+                  onSubmit={(e) => sendEmail(e)}
+                  className=' bg-background rounded-lg border-border max-w-xl p-6 w-full flex items-center place-content-center flex-col space-y-4'
+                >
+                  <div className='max-w-xs md:max-w-md w-full flex flex-col gap-2 text-xs opacity-50 relative'>
+                    <label>Hey! send me a message</label>
+                    <textarea
+                      defaultValue=''
+                      required
+                      rows={10}
+                      name='message'
+                      autoComplete='off'
+                      placeholder="Let's talk!"
+                      className='outline-none focus:border-primary border border-border bg-transparent  w-full p-6  transition-colors  rounded-lg ease-in-out text-sm font-normal text-inherit  peer'
+                    />
+                  </div>
+                  <div className='flex w-full items-center place-content-end px-4'>
+                    {' '}
+                    <button
+                      type='button'
+                      onClick={() => setIsOpen(false)}
+                      className='hover:underline px-6 hover:text-red-600 transition-colors ease-in-out p-1 text-sm '
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type='submit'
+                      className='rounded-lg h-10 p-1 px-6 transition-colors ease-in-out bg-primary text-sm text-white '
+                    >
+                      Send
+                    </button>
+                  </div>
+                </motion.form>
+              </motion.div>
+            ) : null}
+          </AnimatePresence>,
+          body
+        )}
     </AnimatedContainer>
   );
 }

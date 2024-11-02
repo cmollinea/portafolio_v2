@@ -27,17 +27,17 @@ export function ThemeButton() {
       >
         <div className='relative h-5 w-5 overflow-hidden'>
           {' '}
-          {theme === 'dark' ? (
+          {theme === 'light' ? (
             <AnimatePresence>
               <motion.svg
                 key={'light'}
-                initial={{ opacity: 0, rotate: -100, translateY: 20 }}
+                initial={{ opacity: 0, rotate: -100, translateY: 50 }}
                 animate={{
                   opacity: 1,
                   rotate: 0,
                   translateY: 0
                 }}
-                exit={{ opacity: 0, rotate: -100, translateY: 20 }}
+                exit={{ opacity: 0, rotate: -100, translateY: 50 }}
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='0 0 24 24'
@@ -56,13 +56,13 @@ export function ThemeButton() {
             <AnimatePresence>
               <motion.svg
                 key={'dark'}
-                initial={{ opacity: 0, rotate: -100, translateY: 20 }}
+                initial={{ opacity: 0, rotate: -100, translateY: -50 }}
                 animate={{
                   opacity: 1,
                   rotate: 0,
                   translateY: 0
                 }}
-                exit={{ opacity: 0, rotate: -100, translateY: 20 }}
+                exit={{ opacity: 0, rotate: -100, translateY: -50 }}
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='0 0 24 24'
