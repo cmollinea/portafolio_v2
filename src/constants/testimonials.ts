@@ -44,29 +44,34 @@ export class Testimonials {
 
   private en = [
     {
-      name: '',
-      ocupation: '',
-      content: ''
+      name: 'Samuel Llanes',
+      occupation: 'Photographer',
+      content:
+        'The attention was what I have always liked since I first contacted Carlos; he always took care of every detail of my site, and the final result was exactly what I was looking for.'
     },
     {
-      name: '',
-      ocupation: '',
-      content: ''
+      name: 'Jorge Acosta',
+      occupation: 'Founder of La Mixóloga bar',
+      content:
+        'Thank you, Carlos, for your dedication, passion, and the love you put into your work to satisfy even the complex tastes or desires of those who request your services. Thank you very much; I would not hesitate to hire you as many times as necessary 🙏🏻.'
     },
     {
-      name: '',
-      ocupation: '',
-      content: ''
+      name: 'Rachel',
+      occupation: 'Community Manager at FAMEC',
+      content:
+        'Yoan’s work as a web developer exceeded my expectations; he achieved the image in line with my requirements and also facilitated its design so that my clients could navigate the website easily.'
     },
     {
-      name: '',
-      ocupation: '',
-      content: ''
+      name: 'Alejandro',
+      occupation: 'Creator of LAMBDA Solar',
+      content:
+        'We are very satisfied with the renovation of our website for Lambda. The new design is modern and has improved the user experience.'
     },
     {
-      name: '',
-      ocupation: '',
-      content: ''
+      name: 'Marcos Antonio Avila',
+      occupation: 'Backend Developer',
+      content:
+        'I had the pleasure of meeting Yoan at a crucial moment in my career when I was unsure whether I should study frontend development. During our collaboration on a project, I was impressed by his ability to break down complex concepts in a clear and accessible manner.'
     }
   ];
 
