@@ -17,7 +17,7 @@ const TestimonialCard = ({ name, ocupation, content }: Props) => {
             decoding='async'
             loading='lazy'
             className='h-16 w-16 flex-grow rounded-full border border-foreground/10'
-            src='https://randomuser.me/api/portraits/men/45.jpg'
+            src={`https://api.dicebear.com/9.x/identicon/svg?seed=${name}`}
             alt=''
           />
         </div>
